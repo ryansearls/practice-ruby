@@ -2,33 +2,56 @@
 # item2 = {food: "mango", color: "orange", price: 2.5}
 # item3 = {food: "kiwi", color: "greeen", price: 3.0}
 
-puts "Welcome to my store. "
+# puts "Welcome to my store. "
 
 
+module Storeable
+
+  def initialize(input_options)
+    @food_name = input_options[:food_name]
+    @food_color = input_options[:food_color]
+    @food_price = input_options[:food_price]
+  end 
+
+  def food_name
+    @food_name
+  end 
+
+  def food_color
+    @food_color
+  end 
+
+  def food_price
+    @food_price
+  end 
+
+
+end   
 
 
 class Store
+  include Storeable
   attr_reader :food_name, :food_color, :food_price
   attr_writer :food_name, :food_color, :food_price
 
 
-def initialize(input_options)
-  @food_name = input_options[:food_name]
-  @food_color = input_options[:food_color]
-  @food_price = input_options[:food_price]
-end  
+# def initialize(input_options)
+#   @food_name = input_options[:food_name]
+#   @food_color = input_options[:food_color]
+#   @food_price = input_options[:food_price]
+# end  
 
-def food_name
-  @food_name
-end 
+# def food_name
+#   @food_name
+# end 
 
-def food_color
-  @food_color
-end 
+# def food_color
+#   @food_color
+# end 
 
-def food_price
-  @food_price
-end 
+# def food_price
+#   @food_price
+# end 
 
 def food_name=(input_text)
   @food_name = input_text
@@ -36,6 +59,11 @@ end
 
 end 
 
+class Snackbar
+ include Storeable
+  
+
+end  
 
 
 
