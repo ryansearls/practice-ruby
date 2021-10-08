@@ -48,17 +48,17 @@
 # Output: [8, 4, 10, 198, -8]
 
 
-def double(array)
-  output = []
-  i = 0
-  while i < array.length
-    output << array[i] * 2
-    i += 1
-  end
-  return output
-end
+# def double(array)
+#   output = []
+#   i = 0
+#   while i < array.length
+#     output << array[i] * 2
+#     i += 1
+#   end
+#   return output
+# end
 
-p double([4, 2, 5, 99, -4])
+# p double([4, 2, 5, 99, -4])
 
 
 
@@ -126,19 +126,81 @@ end while loop
 # Output: [5, 4, 3, 2, 1]
 
 
-def reverse_array(array)
-  new_arr = []
-  i = array.length - 1
+# def reverse_array(array)
+#   new_arr = []
+#   i = array.length - 1
 
-  while i >= 0 
-    new_arr << array[i] 
-    i -= 1
-  end
+#   while i >= 0 
+#     new_arr << array[i] 
+#     i -= 1
+#   end
 
-  new_arr 
-end
+#   new_arr 
+# end
 
-p reverse_array([1, 2, 3, 4, 5])   #=> [5, 4, 3, 2, 1]
+# p reverse_array([1, 2, 3, 4, 5])   #=> [5, 4, 3, 2, 1]
+
+# Write a function that returns the reverse of a given string.
+
+# Input: “abcde”
+# Output: “edcba”
+
+
+# Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
+
+#   Input: “hello, how are your porcupines today?”
+#   Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
+
+#   input: ""
+#   output: ""
+
+=begin
+    
+  create a function
+  take in a string as an argument 
+  new_string = ''
+  while loop to iterate through
+    index = 0
+    .upcase every other element of the string 
+    iterate through the string by 2 index += 2
+    return new_string 
+=end
+
+
+# def upcase(string)
+#   index = 0
+#   index2 = 1
+#   new_string = ''
+#   while index < string.length
+#     new_string << string[index].upcase 
+#     index += 2
+#   end 
+#   return new_string
+# end 
+
+
+# p upcase("hello, how are your porcupines today?")
+
+
+
+def upcase(string)
+  index = 0
+  index2 = 1
+  new_string = ''
+  while index < string.length
+    new_string << string[index]
+    index += 2
+    new_string << string[index2].to_s.upcase
+    index2 += 2
+  end 
+  return new_string
+end 
+
+
+p upcase("hello, how are your porcupines today?")
+
+
+
 
 
 
