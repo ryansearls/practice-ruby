@@ -29,18 +29,18 @@
 
 
 
-def money(string)
-  index = 0
-  while index < string.length
-    if string[index] == "$"
-      return true
-    end   
-    index += 1 
-  end 
-  return false 
-end 
+# def money(string)
+#   index = 0
+#   while index < string.length
+#     if string[index] == "$"
+#       return true
+#     end   
+#     index += 1 
+#   end 
+#   return false 
+# end 
 
-p money("abcdefghijklmnopqrstuvwxyz")
+# p money("abcdefghijklmnopqrstuvwxyz")
 
 
 
@@ -96,3 +96,16 @@ p money("abcdefghijklmnopqrstuvwxyz")
 
 
 # p upcase("hello, how are your porcupines today?")
+
+
+def duplicate(string)
+  index = 0
+    while index < string.length
+      if string[index] == string[index + 1]
+        return string[index]
+      end 
+      index += 1
+    end 
+end 
+
+p duplicate("abcdefghhijkkloooop")
