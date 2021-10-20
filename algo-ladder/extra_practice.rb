@@ -190,6 +190,33 @@
 
 #=============================================================================
 
+# Given a string, write a function that returns true if the “$” character is contained within the string or false if it is not.
+
+# Input: “i hate $ but i love money i know i know im crazy”
+# Output: true
+
+# Input: “abcdefghijklmnopqrstuvwxyz”
+# Output: false
+
+
+# def money(string)
+#   index = 0
+#   while index < string.length
+#     if string[index] == "$"
+#       return true
+#       break
+#     end
+#       index += 1
+#   end 
+#   return false
+
+# end 
+
+# p money("i hate $ but i love money i know i know im crazy")
+
+# go over this one, covering the return's
+
+#========================================================================
 
 
 
