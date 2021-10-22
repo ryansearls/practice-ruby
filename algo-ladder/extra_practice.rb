@@ -224,18 +224,40 @@
 #   Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
 
 
-  def upper(string)
-    new_string = ''
-    index = 0
-    index2 = 1
-    while index < string.length
-     new_string << string[index]
-     index += 2
-     new_string << string[index2].to_s.upcase
-     index2 += 2
-    end  
-    new_string 
-  end 
+  # def upper(string)
+  #   new_string = ''
+  #   index = 0
+  #   index2 = 1
+  #   while index < string.length
+  #    new_string << string[index]
+  #    index += 2
+  #    new_string << string[index2].to_s.upcase
+  #    index2 += 2
+  #   end  
+  #   new_string 
+  # end 
   
-  p upper("hello, how are your porcupines today?")
+  # p upper("hello, how are your porcupines today?")
+
+
+  #=======================================================================
+
+#   Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
+
+def duplicate(string)
+  index = 0
+  while index < string.length
+    if string[index] == string[index + 1]
+      return string[index]
+    end 
+    index += 1  
+  end   
+
+end 
+
+p duplicate("abcdefghhijkkloooop")
 
