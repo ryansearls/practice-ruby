@@ -248,16 +248,35 @@
 # Output: “h”
 
 
-def duplicate(string)
-  index = 0
-  while index < string.length
-    if string[index] == string[index + 1]
-      return string[index]
-    end 
-    index += 1  
-  end   
+# def duplicate(string)
+#   index = 0
+#   while index < string.length
+#     if string[index] == string[index + 1]
+#       return string[index]
+#     end 
+#     index += 1  
+#   end   
+
+# end 
+
+# p duplicate("abcdefghhijkkloooop")
+
+#========================================================================
+
+Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+Input: “racecar”
+Output: true
+
+Input: “baloney”
+Output: false
+
+
+def palindrome(string)
+index = 0
+index2 = string.length - 1
+  while index 
 
 end 
 
-p duplicate("abcdefghhijkkloooop")
-
+p palindrome("")
