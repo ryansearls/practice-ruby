@@ -272,10 +272,10 @@
 # Output: false
 
 
-def palindrome(string)
+def palindrome?(string)
   index = 0
   while index < (string.length / 2)
-    if string[index] != string[-(1 + 1)]
+    if string[index] != string[-(index + 1)]
       return false
     else 
       index += 1
@@ -284,7 +284,9 @@ def palindrome(string)
   return true    
 end 
 
-p palindrome("racecar")
+p palindrome?("racecar")
+
+
 
 
 #====================================
