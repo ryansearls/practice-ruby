@@ -301,8 +301,36 @@
 # Output: 0
 
 
-def hamming(string1, string2)
-  3
+# def hamming(string1, string2)
+#   index = 0
+#   different = 0
+#   while index < string1.length
+#     if string1[index] != string2[index]
+#       different += 1
+#     end 
+#     index += 1
+#   end 
+#   return different 
+# end 
+
+# p hamming("ABCDEFG", "ABCXEOG")
+
+
+# def hamming(string1, string2)
+#   count = 0
+#   index = 0
+
+#   while index < string1.length
+#     if string1[index] != string2[index]
+#       count += 1
+#     end
+#     index += 1
+#   end
+#   return count
+# end
+
+# p hamming("ABCDEFG", "ABCXEOG") #2
+# p hamming("ABCDEFG", "ABCDEFG") #0
 
 
 #================================================
