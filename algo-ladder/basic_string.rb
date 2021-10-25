@@ -109,3 +109,7 @@ def duplicate(string)
 end 
 
 p duplicate("abcdefghhijkkloooop")
+
+
+
+#==========================================
