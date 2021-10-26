@@ -91,24 +91,50 @@
 
 
 #=============================================
-
+#5
 # Write a function that accepts an array of numbers and returns an array with each number converted into a string.
 # Example:
 # Input: [1, 2, 3]
 # Output: ["1", "2", "3"]
 
 
-def to_string(array)
+# def to_string(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     new_array << array[index].to_s
+#     index += 1
+#   end 
+#   new_array   
+# end 
+
+
+# p to_string([1,2,3])
+
+
+#==========================================
+
+#6
+# Write a function that accepts an array of numbers and returns a new array with only the even numbers.
+# Example:
+# Input: [2, 4, 5, 1, 8, 9, 7]
+# Output: [2, 4, 8]
+
+
+def even_numbers(array)
   new_array = []
   index = 0
   while index < array.length
-    new_array << array[index].to_s
+    if array[index] % 2 == 0
+      new_array << array[index]
+    end 
     index += 1
   end 
-  new_array   
+  new_array     
+
 end 
 
 
-p to_string([1,2,3])
+p even_numbers([2, 4, 5, 1, 8, 9, 7])
 
-
+#===================================================
