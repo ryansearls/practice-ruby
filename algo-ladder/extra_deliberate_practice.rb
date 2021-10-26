@@ -260,3 +260,25 @@
 # p total([5, 10, 8, 3])
 
 #=========================================
+
+# Write a function that accepts an array of numbers and returns the smallest number.
+# Example:
+# Input: [5, 3, 8, 10]
+# Output: 3
+
+
+def smallest_num(array)
+  small = array[0]
+  index = 1
+  while index < array.length
+    if array[index] < small
+      small = array[index]
+    end 
+    index += 1
+  end 
+  small    
+
+end 
+
+
+p smallest_num([3, 4, 8, 1])
