@@ -45,7 +45,7 @@
 
 
 #===================================================
-
+# 3
 # Write a function that accepts an array of numbers and returns an array with each number divided by 2.
 # Example:
 # Input: [1, 2, 3]
@@ -70,5 +70,45 @@
 
 #======================================================
 
+#4
+# Write a function that accepts an array of strings and returns an array with each strings first letter only.
+# Example:
+# Input: ["hello", "goodbye"]
+# Output: ["h", "g"]
+
+# def first_letter(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     new_array << array[index][0]
+#     index += 1
+#   end 
+#   new_array   
+# end 
+
+
+# p first_letter(["hello", "goodbye"])
+
+
+#=============================================
+
+# Write a function that accepts an array of numbers and returns an array with each number converted into a string.
+# Example:
+# Input: [1, 2, 3]
+# Output: ["1", "2", "3"]
+
+
+def to_string(array)
+  new_array = []
+  index = 0
+  while index < array.length
+    new_array << array[index].to_s
+    index += 1
+  end 
+  new_array   
+end 
+
+
+p to_string([1,2,3])
 
 
