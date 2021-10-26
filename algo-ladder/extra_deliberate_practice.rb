@@ -221,18 +221,42 @@
 # Output: [5, 1, 9, 7]
 
 
-def odd_nums(array)
-  new_arr = []
-  index = 0
-  while index < array.length
-    if array[index] % 2 == 1
-      new_arr << array[index]
-    end 
-    index += 1
-  end 
-  new_arr    
+# def odd_nums(array)
+#   new_arr = []
+#   index = 0
+#   while index < array.length
+#     if array[index] % 2 == 1
+#       new_arr << array[index]
+#     end 
+#     index += 1
+#   end 
+#   new_arr    
 
-end 
+# end 
 
 
-p odd_nums([2, 4, 5, 1, 8, 9, 7])
+# p odd_nums([2, 4, 5, 1, 8, 9, 7])
+
+
+#=================================================
+
+#11
+# Write a function that accepts an array of numbers and returns the sum of all the numbers.
+# Example:
+# Input: [5, 10, 8, 3]
+# Output: 26
+
+
+# def total(array)
+#   index = 0
+#   count = 0
+#   while index < array.length
+#     count += array[index]
+#     index += 1
+#   end 
+#   count   
+# end 
+
+# p total([5, 10, 8, 3])
+
+#=========================================
