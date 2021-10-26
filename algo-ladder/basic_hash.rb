@@ -7,26 +7,42 @@
 def frequent_letter(string)
   count = {}
   index = 0
+  most_frequent_letter = ''
   while index < string.length
-    string[index] += 1
+    if count[string[index]] 
+      count[string[index]] += 1
+    else 
+      count[string[index]] += 1
+    end 
     index += 1
   end 
-  
-  return count 
+  return most_frequent_letter 
 
 
 end 
 
 
-# p frequent_letter("peter piper picked a peck of pickled peppers")
 
-# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+p frequent_letter("peter piper picked a peck of pickled peppers")
 
-# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
 
-# Output: {"Dewey" => 6, "Truman" => 5}
+#?????????????????????????????????????????
 
-# Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+Output: {"Dewey" => 6, "Truman" => 5}
+
+Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+de
+
+
+
+
+
 
 
 
