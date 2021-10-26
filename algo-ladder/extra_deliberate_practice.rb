@@ -315,20 +315,46 @@
 # Output: "volleyball-basketball-badminton"
 
 
-def single_strings(array)
-  single_string = ""
-  index = 0
-  while index < array.length
-    string = array[index]
-    single_string += "#{string}-"
-    index += 1
-  end
-  p single_string
+# def single_strings(array)
+#   single_string = ""
+#   index = 0
+#   while index < array.length
+#     string = array[index]
+#     single_string += "#{string}-"
+#     index += 1
+#   end
+#   p single_string
 
-end 
+# end 
 
-p single_strings(["volleyball", "basketball", "badminton"])
+# p single_strings(["volleyball", "basketball", "badminton"])
 
 # extra - on the end of badmiton
 
 #???????????????????????
+
+
+#15
+# Write a function that accepts an array of numbers and returns the greatest number.
+# Example:
+# Input: [5, 10, 8, 3]
+# Output: 10
+
+# def max_num(array)
+#   max = array[0]
+#   index = 1
+#   while index < array.length
+#     if array[index] > max
+#       max = array[index]
+#     end 
+#     index += 1
+#   end 
+  
+#   max 
+
+# end 
+
+# p max_num([14, 10, 13, 3])
+
+
+#============================================
