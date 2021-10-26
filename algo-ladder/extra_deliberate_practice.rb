@@ -171,17 +171,45 @@
 # Output: [8, 0, 3]
 
 
-def less_than_ten(array)
-  new_array = []
-  i = 0
-  while i < array.length
-    if array[i] < 10
-      new_array << array[i]
-    end 
-    i += 1
-  end 
-  new_array     
+# def less_than_ten(array)
+#   new_array = []
+#   i = 0
+#   while i < array.length
+#     if array[i] < 10
+#       new_array << array[i]
+#     end 
+#     i += 1
+#   end 
+#   new_array     
 
-end 
+# end 
 
-p less_than_ten([8, 23, 0, 44, 1980, 3])
+# p less_than_ten([8, 23, 0, 44, 1980, 3])
+
+
+#================================================
+
+
+#9
+# Write a function that accepts an array of strings and returns an array with only the strings that dont start with the letter "b".
+# Example:
+# Input: ["big", "little", "good", "bad"]
+# Output: ["little", "good"]
+
+
+# def no_b(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     if array[index][0].upcase != "B"
+#       new_array << array[index]
+#     end 
+#     index += 1
+#   end 
+#   new_array     
+# end 
+
+# p no_b(["big", "little", "good", "bad"])
+
+
+#==================================================
