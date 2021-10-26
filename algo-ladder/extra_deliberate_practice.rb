@@ -292,16 +292,43 @@
 # Output: 29
 
 
-def total_length(array)
-  sum = 0
+# def total_length(array)
+#   sum = 0
+#   index = 0
+#   while index < array.length
+#     sum += array[index].length
+#     index += 1
+#   end 
+#   sum   
+
+# end 
+
+
+# p total_length(["volleyball", "basketball", "badminton"])
+
+#================================================
+
+#14
+# Write a function that accepts an array of strings and returns a single string that combines all the individual strings separated by dashes.
+# Example:
+# Input: ["volleyball", "basketball", "badminton"]
+# Output: "volleyball-basketball-badminton"
+
+
+def single_strings(array)
+  single_string = ""
   index = 0
   while index < array.length
-    sum += array[index].length
+    string = array[index]
+    single_string += "#{string}-"
     index += 1
-  end 
-  sum   
+  end
+  p single_string
 
 end 
 
+p single_strings(["volleyball", "basketball", "badminton"])
 
-p total_length(["volleyball", "basketball", "badminton"])
+# extra - on the end of badmiton
+
+#???????????????????????
