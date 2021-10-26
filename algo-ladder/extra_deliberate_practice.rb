@@ -213,3 +213,26 @@
 
 
 #==================================================
+
+#10
+# Write a function that accepts an array of numbers and returns an array with only the odd numbers.
+# Example:
+# Input: [2, 4, 5, 1, 8, 9, 7]
+# Output: [5, 1, 9, 7]
+
+
+def odd_nums(array)
+  new_arr = []
+  index = 0
+  while index < array.length
+    if array[index] % 2 == 1
+      new_arr << array[index]
+    end 
+    index += 1
+  end 
+  new_arr    
+
+end 
+
+
+p odd_nums([2, 4, 5, 1, 8, 9, 7])
