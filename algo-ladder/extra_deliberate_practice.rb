@@ -31,15 +31,44 @@
 # Output: [5, 7]
 
 
-def string_length(array)
-  index = 0
-  new_array = []
-  while index < array.length
-    new_array << array[index].length
-    index += 1
-  end   
-  new_array 
-end 
+# def string_length(array)
+#   index = 0
+#   new_array = []
+#   while index < array.length
+#     new_array << array[index].length
+#     index += 1
+#   end   
+#   new_array 
+# end 
 
-p string_length(["hello", "goodbye"])
+# p string_length(["hello", "goodbye"])
+
+
+#===================================================
+
+# Write a function that accepts an array of numbers and returns an array with each number divided by 2.
+# Example:
+# Input: [1, 2, 3]
+# Output: [0.5, 1.0, 1.5]
+
+
+
+# def half(array)
+#   index = 0
+#   new_array = []
+#   while index < array.length
+#     new_array << (array[index] / 2.0)
+#     index += 1
+#   end 
+#   new_array   
+
+# end 
+
+
+# p half([1, 2, 3])
+
+
+#======================================================
+
+
 
