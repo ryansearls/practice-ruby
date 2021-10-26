@@ -121,20 +121,42 @@
 # Output: [2, 4, 8]
 
 
-def even_numbers(array)
+# def even_numbers(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     if array[index] % 2 == 0
+#       new_array << array[index]
+#     end 
+#     index += 1
+#   end 
+#   new_array     
+
+# end 
+
+
+# p even_numbers([2, 4, 5, 1, 8, 9, 7])
+
+#===================================================
+
+# Write a function that accepts an array of strings and returns an array with only the strings shorter than 4 letters.
+# Example:
+# Input: ["a", "man", "a", "plan", "a", "canal", "panama"]
+# Output: ["a", "man", "a", "a"]
+
+
+def less_than_four(array)
   new_array = []
-  index = 0
-  while index < array.length
-    if array[index] % 2 == 0
-      new_array << array[index]
+  i = 0
+  while i < array.length
+    if array[i].length < 4
+      new_array << array[i]
     end 
-    index += 1
+    i += 1
   end 
   new_array     
 
 end 
 
 
-p even_numbers([2, 4, 5, 1, 8, 9, 7])
-
-#===================================================
+p less_than_four(["a", "man", "a", "plan", "a", "canal", "panama"])
