@@ -260,25 +260,48 @@
 # p total([5, 10, 8, 3])
 
 #=========================================
-
+#12
 # Write a function that accepts an array of numbers and returns the smallest number.
 # Example:
 # Input: [5, 3, 8, 10]
 # Output: 3
 
 
-def smallest_num(array)
-  small = array[0]
-  index = 1
+# def smallest_num(array)
+#   small = array[0]
+#   index = 1
+#   while index < array.length
+#     if array[index] < small
+#       small = array[index]
+#     end 
+#     index += 1
+#   end 
+#   small    
+
+# end 
+
+
+# p smallest_num([3, 4, 8, 1])
+
+#=============================================
+
+#13
+# Write a function that accepts an array of strings and returns the total length of all the strings.
+# Example:
+# Input: ["volleyball", "basketball", "badminton"]
+# Output: 29
+
+
+def total_length(array)
+  sum = 0
+  index = 0
   while index < array.length
-    if array[index] < small
-      small = array[index]
-    end 
+    sum += array[index].length
     index += 1
   end 
-  small    
+  sum   
 
 end 
 
 
-p smallest_num([3, 4, 8, 1])
+p total_length(["volleyball", "basketball", "badminton"])
