@@ -59,19 +59,50 @@
 # Output: 21 (as this is the 9th number of the Fibonacci Sequence)
 
 
-def fib(number)
-  num1, num2 = [0,1]
+# def fib(number)
+#   num1, num2 = [0,1]
  
-  (number - 1).times do 
-    num1, num2 = num2, num1+num2
-  end 
+#   (number - 1).times do 
+#     num1, num2 = num2, num1+num2
+#   end 
   
-  num1
+#   num1
 
 
-end 
+# end 
 
 
-p fib(9)   #21
+# p fib(9)   #21
 
 #===================================
+
+
+# Given a year, report if it is a leap year.
+
+# The tricky thing here is that a leap year in the Gregorian calendar occurs:
+
+# on every year that is evenly divisible by 4
+# except every year that is evenly divisible by 100
+# unless the year is also evenly divisible by 400
+# For example, 1997 is not a leap year, but 1996 is. 1900 is not a leap year, but 2000 is.
+
+# If your language provides a method in the standard library that does this look-up, pretend it doesnt exist and implement it yourself.
+
+
+def leap_year?(year)
+  if (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)
+    return true
+  else 
+    false 
+  end     
+end 
+
+p leap_year?(1997)
+p leap_year?(1996)
+p leap_year?(2000)
+p leap_year?(400)
+p leap_year?(250)
+p leap_year?(1800)
+p leap_year?(1703)
+p leap_year?(1911)
+p leap_year?(1912)
