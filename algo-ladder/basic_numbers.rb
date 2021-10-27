@@ -89,20 +89,45 @@
 # If your language provides a method in the standard library that does this look-up, pretend it doesnt exist and implement it yourself.
 
 
-def leap_year?(year)
-  if (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)
-    return true
-  else 
-    false 
-  end     
+# def leap_year?(year)
+#   if (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)
+#     return true
+#   else 
+#     false 
+#   end     
+# end 
+
+# p leap_year?(1997)
+# p leap_year?(1996)
+# p leap_year?(2000)
+# p leap_year?(400)
+# p leap_year?(250)
+# p leap_year?(1800)
+# p leap_year?(1703)
+# p leap_year?(1911)
+# p leap_year?(1912)
+
+
+#============================================================
+
+# If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+# Find the sum of all the multiples of 3 or 5 below 1000.
+
+
+def multiples(num)
+  sum = 0
+  index = 0
+  while index < num 
+    if (index % 3 == 0) || (index % 5 == 0)
+      sum += index
+    end 
+    index += 1
+  end       
+  sum
 end 
 
-p leap_year?(1997)
-p leap_year?(1996)
-p leap_year?(2000)
-p leap_year?(400)
-p leap_year?(250)
-p leap_year?(1800)
-p leap_year?(1703)
-p leap_year?(1911)
-p leap_year?(1912)
+p multiples(1000)
+
+
+#======================================================
