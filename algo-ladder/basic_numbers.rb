@@ -61,7 +61,7 @@
 
 def fib(number)
   num1, num2 = [0,1]
-
+ 
   (number - 1).times do 
     num1, num2 = num2, num1+num2
   end 
@@ -73,34 +73,5 @@ end
 
 
 p fib(9)   #21
-
-
-# def fib(number)
-#   num1 = 0
-#   num2 = 1
-#   index = 0
-#   while index < number 
-#     num1 = num2
-#     num2 = num1 + num2
-#     index += 1
-#   end 
-  
-#   num1
-# end   
-
-# p fib(3)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #===================================
