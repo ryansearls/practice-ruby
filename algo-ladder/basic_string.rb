@@ -98,17 +98,17 @@
 # p upcase("hello, how are your porcupines today?")
 
 
-def duplicate(string)
-  index = 0
-    while index < string.length
-      if string[index] == string[index + 1]
-        return string[index]
-      end 
-      index += 1
-    end 
-end 
+# def duplicate(string)
+#   index = 0
+#     while index < string.length
+#       if string[index] == string[index + 1]
+#         return string[index]
+#       end 
+#       index += 1
+#     end 
+# end 
 
-p duplicate("abcdefghhijkkloooop")
+# p duplicate("abcdefghhijkkloooop")
 
 
 

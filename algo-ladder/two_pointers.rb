@@ -23,23 +23,24 @@
 # Input: ["a", "b", "c", "d"]
 # Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
 
-def meshii(array)
-  new_array = []
-  i1 = 0
-  while i1 < array.length
-    i2 = 0
-    while i2 < array.length
-      if array[i1] != array[i2]
-        new_array << array[i1] + array[i2]
-      end 
-      i2 += 1
-    end 
-    i1 += 1
-  end 
-  new_array         
-end 
+# def meshii(array)
+#   new_array = []
+#   i1 = 0
+#   while i1 < array.length
+#     i2 = 0
+#     while i2 < array.length
+#       if array[i1] != array[i2]
+#         new_array << array[i1] + array[i2]
+#       end 
+#       i2 += 1
+#     end 
+#     i1 += 1
+#   end 
+#   new_array         
+# end 
 
 
-p meshii(["a", "b", "c", "d"])
+# p meshii(["a", "b", "c", "d"])
 
+#==================================================================
 
