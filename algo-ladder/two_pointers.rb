@@ -4,16 +4,22 @@
 # Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
 
 
-# def string_combo(array1, array2)
-#   index = 0
-#   array = []
-#   while index 
+def array_mesh1(array1, array2)
+  i1 = 0
+  array = []
+  while i1 < array1.length
+    i2 = 0
+    while i2 < array2.length
+      array << array1[i1] + array2[i2]
+      i2 += 1
+    end 
+    i1 += 1
+  end
+  array      
+end 
 
 
-# end 
-
-
-# p string_combo(["a", "b", "c"], ["d", "e", "f", "g"])
+p array_mesh1(["a", "b", "c"], ["d", "e", "f", "g"])
 
 
 #==================================================================
