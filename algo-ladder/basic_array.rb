@@ -152,19 +152,23 @@ end while loop
 # [2, 3, 1, 2, 2, 1, 5, 2, 2]
 
 
-def next_num(array)
-  new_arr = []
-  index = 0
-  while index < array.length
-    new_arr << array[index]
-    index += array[index]
-  end 
-  puts "hi"
-  return new_arr
+# def next_num(array)
+#   new_arr = []
+#   index = 0
+#   while index < array.length
+#     new_arr << array[index]
+#     index += array[index]
+#   end 
+#   puts "hi"
+#   return new_arr
 
-end 
+# end 
 
-p next_num([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+# p next_num([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+
+
+
+#=======================================================
 
 
 
