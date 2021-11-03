@@ -4,31 +4,31 @@
 # Output: “p”
 
 
-def frequent_letter(string)
-  count = {}
-  index = 0
-  most_frequent_letter = ''
-  most_frequent_count = 0
-  while index < string.length
-    if count[string[index]] 
-      count[string[index]] += 1
-    else 
-      count[string[index]] = 1
-    end 
+# def frequent_letter(string)
+#   count = {}
+#   index = 0
+#   most_frequent_letter = ''
+#   most_frequent_count = 0
+#   while index < string.length
+#     if count[string[index]] 
+#       count[string[index]] += 1
+#     else 
+#       count[string[index]] = 1
+#     end 
 
-    if count[string[index]] > most_frequent_count
-      most_frequent_count = count[string[index]]
-      most_frequent_letter = string[index]
-    end 
+#     if count[string[index]] > most_frequent_count
+#       most_frequent_count = count[string[index]]
+#       most_frequent_letter = string[index]
+#     end 
 
-    index += 1
-  end 
-  most_frequent_letter 
-end 
+#     index += 1
+#   end 
+#   most_frequent_letter 
+# end 
 
 
 
-p frequent_letter("peter piper picked a peck of pickled peppers")
+# p frequent_letter("peter piper picked a peck of pickled peppers")
 
 
 #?????????????????????????????????????????
@@ -66,7 +66,29 @@ p frequent_letter("peter piper picked a peck of pickled peppers")
 #================================================================================
 
 
+# Given a hash, where the keys are strings representing food items, and the values are numbers representing the price of each food, return the amount someone would pay if theyd order one of each food from the entire menu.
 
+# Input: {"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2}
+
+# Output: 14
+
+# Explanation: If someone would order one of everything on the menu, theyd pay a total of 14 (the sum of all the hashs values).
+
+
+
+def entire_menu(hash)
+  total = 0
+  index = 0
+  while index < hash.length
+    total += hash[index]
+  end 
+  index += 1
+  total
+
+end 
+
+
+p entire_menu({"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2})
 
 
 
