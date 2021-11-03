@@ -80,9 +80,9 @@ def entire_menu(hash)
   total = 0
   index = 0
   while index < hash.length
-    total += hash[index]
+    total += hash[index].to_i
+    index += 1
   end 
-  index += 1
   total
 
 end 
