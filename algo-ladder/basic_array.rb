@@ -144,21 +144,21 @@ end while loop
 
 
 
-def reverse(array)
-  index = array.length - 1
-  new_array = []
-  while index >= 0
-    new_array << array[index]
-    index -= 1
-  end 
-  new_array  
-end 
+# def reverse(array)
+#   index = array.length - 1
+#   new_array = []
+#   while index >= 0
+#     new_array << array[index]
+#     index -= 1
+#   end 
+#   new_array  
+# end 
 
 
-p reverse([1, 2, 3, 4, 5])
+# p reverse([1, 2, 3, 4, 5])
 
 
-#===================================
+#====================================================
 
 
 # Given an array of numbers, write a function that returns a new array in which only select numbers from the original array are included, based on the following details:
@@ -172,20 +172,19 @@ p reverse([1, 2, 3, 4, 5])
 # [2, 3, 1, 2, 2, 1, 5, 2, 2]
 
 
-# def next_num(array)
-#   new_arr = []
-#   index = 0
-#   while index < array.length
-#     new_arr << array[index]
-#     index += array[index]
-#   end 
-#   puts "hi"
-#   return new_arr
+def skip_it(array)
+  new_array = []
+  index = 0
+  while index < array.length
+    new_array << array[index]
+    index += array[index]
+  end 
+  new_array   
 
-# end 
+end 
 
-# p next_num([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
 
+p skip_it([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
 
 
 #=======================================================
