@@ -4,19 +4,19 @@
 # Output: “edcba”
 
 
-def reverse(string)
-  index = string.length - 1
-  new_string = ''
-  while index >= 0
-    new_string << string[index]
-    index -= 1
-  end 
-  new_string 
+# def reverse(string)
+#   index = string.length - 1
+#   new_string = ''
+#   while index >= 0
+#     new_string << string[index]
+#     index -= 1
+#   end 
+#   new_string 
 
-end 
+# end 
 
 
-p reverse("abcde")
+# p reverse("abcde")
 
 #=====================================
 
@@ -31,18 +31,28 @@ p reverse("abcde")
 
 
 
-# def money(string)
-#   index = 0
-#   while index < string.length
-#     if string[index] == "$"
-#       return true
-#     end   
-#     index += 1 
-#   end 
-#   return false 
-# end 
+def show_me_the_money(string)
+  index = 0
+  while index < string.length
+    if string[index] == "$"
+      return true
+    end   
+    index += 1 
+  end 
+  return false 
+end 
 
-# p money("abcdefghijklmnopqrstuvwxyz")
+p show_me_the_money("abcdefgh$ijklmnopqrstuvwxyz")
+p show_me_the_money("abcdefghijklmnopqrstuvwxyz")
+p show_me_the_money("i hate $ but i love money i know i know im crazy")
+
+
+#======================================
+
+
+
+
+
 
 
 
