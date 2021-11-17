@@ -21,6 +21,7 @@
 
 # p addition([1, 2, 3, 4])
 
+#============================================
 
 
 # Given an array of numbers, write a function that returns a new array that contains all numbers from the original array that are less than 100.
@@ -43,6 +44,8 @@
 
 # p less_than_100([99, 101, 88, 4, 2000, 50])
 
+#============================================
+
 
 # Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
 
@@ -63,6 +66,8 @@
 # end 
 
 # p double([4, 2, 5, 99, -4])
+
+#=======================================
 
 
 
@@ -89,20 +94,21 @@ end while loop
 =end
 
 
-def max(array)
-  max = array[0]
-  index = 1
-  while index < array.length
-    if array[index] > max
-        max = array[index]
-    end 
-    index += 1
-  end 
-  max 
-end  
+# def max(array)
+#   max = array[0]
+#   index = 1
+#   while index < array.length
+#     if array[index] > max
+#         max = array[index]
+#     end 
+#     index += 1
+#   end 
+#   max 
+# end  
 
-p max([5, 17, -4, 20, 12])
+# p max([5, 17, -4, 20, 12])
 
+#=======================================
 
 
 
@@ -114,16 +120,21 @@ p max([5, 17, -4, 20, 12])
 # Explanation: (1 x 2 x 3 x 4) = 24
 
 
-# def multiply(array)
-# product = 1
-# index = 0
+
+# def product(array)
+#   total = 1
+#   index = 0
 #   while index < array.length
-#     product *= array[index]
+#     total *= array[index]
 #     index += 1
 #   end 
-#   return product 
+#   total    
+
 # end 
-# p multiply([1, 2, 3, 4])
+
+# p product([1, 2, 3, 4])
+
+#=========================================
 
 
 # Given an array, write a function that returns an array that contains the original array’s values in reverse.
