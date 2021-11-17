@@ -71,38 +71,44 @@
 =end
 
 
-def upcase(string)
-  index1 = 0
-  index2 = 1
-  new_string = ''
-  while index2 < string.length
-    new_string << string[index1]
-    index1 += 2
-    new_string << string[index2].to_s.upcase
-    index2 += 2
-  end 
-  new_string
+# def upcase(string)
+#   index1 = 0
+#   index2 = 1
+#   new_string = ''
+#   while index2 < string.length
+#     new_string << string[index1]
+#     index1 += 2
+#     new_string << string[index2].to_s.upcase
+#     index2 += 2
+#   end 
+#   new_string
 
-end 
+# end 
 
-p upcase("hello, how are your porcupines today?")
+# p upcase("hello, how are your porcupines today?")
 
 
 #==========================================
 
+# Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
 
 # def duplicate(string)
 #   index = 0
-#     while index < string.length
-#       if string[index] == string[index + 1]
-#         return string[index]
-#       end 
-#       index += 1
+#   while index < string.length
+#     if string[index] == string[index + 1]
+#       return string[index]
 #     end 
+#     index += 1
+#   end 
+
 # end 
 
-# p duplicate()
 
+# p duplicate("abcdefghhijkkloooop")
 
 
 #==========================================
