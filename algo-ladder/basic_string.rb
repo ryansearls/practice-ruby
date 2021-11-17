@@ -112,3 +112,45 @@
 
 
 #==========================================
+
+# Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+# Input: “racecar”
+# Output: true
+
+# Input: “baloney”
+# Output: false
+
+
+def palindrome?(string)
+  index1 = 0
+  index2 = string.length - 1
+  if string[index1] == string[index2]
+    index1 += 1
+    index2 -= 1
+  else 
+    return false
+  end 
+  
+  return true 
+end 
+
+p palindrome?("raceca")
+
+
+#daniel's
+def palindrome?(string)
+  i = 0
+  while i < (string.length / 2)
+    if string[i] != string[-(i + 1)]
+      return false
+    else
+      i += 1
+    end
+  end
+  return true
+end
+
+p palindrome?("whatupbutt")
+
+#===========================================
