@@ -52,17 +52,17 @@
 
 
 
-def double(array)
-  new_array = []
-  index = 0
-  while index < array.length
-    new_array << array[index] * 2
-    index += 1
-  end 
-  new_array    
-end 
+# def double(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     new_array << array[index] * 2
+#     index += 1
+#   end 
+#   new_array    
+# end 
 
-p double([4, 2, 5, 99, -4])
+# p double([4, 2, 5, 99, -4])
 
 
 
@@ -88,19 +88,21 @@ end while loop
   
 =end
 
-# def max(array)
-#   max = array[0]
-#   index = 1
-#   while index < array.length
-#     if array[index] > max
-#       max = array[index]
-#     end 
-#     index += 1
-#   end 
-#   return max
-# end      
 
-# p max([50, 17, -4, 20, 12])
+def max(array)
+  max = array[0]
+  index = 1
+  while index < array.length
+    if array[index] > max
+        max = array[index]
+    end 
+    index += 1
+  end 
+  max 
+end  
+
+p max([5, 17, -4, 20, 12])
+
 
 
 
