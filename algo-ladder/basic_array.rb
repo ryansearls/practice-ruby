@@ -29,19 +29,19 @@
 # Output: [99, 88, 4, 50]
 
 
-def less_than_100(array)
-  index = 0
-  new_array = []
-  while index < array.length
-    if array[index] < 100
-      new_array << array[index]
-    end 
-    index += 1
-  end 
-  new_array
-end 
+# def less_than_100(array)
+#   index = 0
+#   new_array = []
+#   while index < array.length
+#     if array[index] < 100
+#       new_array << array[index]
+#     end 
+#     index += 1
+#   end 
+#   new_array
+# end 
 
-p less_than_100([99, 101, 88, 4, 2000, 50])
+# p less_than_100([99, 101, 88, 4, 2000, 50])
 
 
 # Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
@@ -50,17 +50,19 @@ p less_than_100([99, 101, 88, 4, 2000, 50])
 # Output: [8, 4, 10, 198, -8]
 
 
-# def double(array)
-#   output = []
-#   i = 0
-#   while i < array.length
-#     output << array[i] * 2
-#     i += 1
-#   end
-#   return output
-# end
 
-# p double([4, 2, 5, 99, -4])
+
+def double(array)
+  new_array = []
+  index = 0
+  while index < array.length
+    new_array << array[index] * 2
+    index += 1
+  end 
+  new_array    
+end 
+
+p double([4, 2, 5, 99, -4])
 
 
 
