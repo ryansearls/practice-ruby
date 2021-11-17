@@ -67,7 +67,7 @@
 
 # p double([4, 2, 5, 99, -4])
 
-#=======================================
+#===========================================================
 
 
 
@@ -89,8 +89,6 @@
   return the max 
 end while loop 
     
-
-  
 =end
 
 
@@ -172,19 +170,19 @@ end while loop
 # [2, 3, 1, 2, 2, 1, 5, 2, 2]
 
 
-def skip_it(array)
-  new_array = []
-  index = 0
-  while index < array.length
-    new_array << array[index]
-    index += array[index]
-  end 
-  new_array   
+# def skip_it(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     new_array << array[index]
+#     index += array[index]
+#   end 
+#   new_array   
 
-end 
+# end 
 
 
-p skip_it([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+# p skip_it([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
 
 
 #=======================================================
