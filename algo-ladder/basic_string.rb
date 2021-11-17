@@ -3,20 +3,22 @@
 # Input: “abcde”
 # Output: “edcba”
 
-# def reverse(string)
-#   index = string.length - 1
-#   new_string = ''
-#   while index >= 0
-#     new_string << string[index]
-#     index -= 1
-#   end 
-  
-#   new_string
 
-# end 
+def reverse(string)
+  index = string.length - 1
+  new_string = ''
+  while index >= 0
+    new_string << string[index]
+    index -= 1
+  end 
+  new_string 
 
-# p reverse("abcde")
+end 
 
+
+p reverse("abcde")
+
+#=====================================
 
 
 # Given a string, write a function that returns true if the “$” character is contained within the string or false if it is not.
