@@ -8,18 +8,18 @@
 # Explanation: (1 + 2 + 3 + 4) = 10
 
 
-def addition(array)
-sum = 0
-index = 0
-  while index < array.length
-    sum += array[index]
-    index += 1
-  end 
+# def addition(array)
+# sum = 0
+# index = 0
+#   while index < array.length
+#     sum += array[index]
+#     index += 1
+#   end 
   
-  sum 
-end 
+#   sum 
+# end 
 
-p addition([1, 2, 3, 4])
+# p addition([1, 2, 3, 4])
 
 
 
@@ -28,20 +28,20 @@ p addition([1, 2, 3, 4])
 # Input: [99, 101, 88, 4, 2000, 50]
 # Output: [99, 88, 4, 50]
 
-# def small_nums(array)
-#   new_array = []
-#   index = 0
-#   while index < array.length
-#     if array[index] < 100
-#       new_array << array[index]
-#     end  
-#     index += 1
-#   end 
-#   return new_array  
-# end 
 
+def less_than_100(array)
+  index = 0
+  new_array = []
+  while index < array.length
+    if array[index] < 100
+      new_array << array[index]
+    end 
+    index += 1
+  end 
+  new_array
+end 
 
-# p small_nums([99, 101, 88, 4, 2000, 50])
+p less_than_100([99, 101, 88, 4, 2000, 50])
 
 
 # Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
