@@ -7,17 +7,19 @@
 
 # Explanation: (1 + 2 + 3 + 4) = 10
 
-# def addition(array)
-#   count = 0
-#   index = 0
-#   while index < array.length
-#     count += array[index]
-#     index += 1
-#   end 
-#   return count 
-# end  
 
-# p addition([1, 2, 3, 4])
+def addition(array)
+sum = 0
+index = 0
+  while index < array.length
+    sum += array[index]
+    index += 1
+  end 
+  
+  sum 
+end 
+
+p addition([1, 2, 3, 4])
 
 
 
