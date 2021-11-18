@@ -106,7 +106,7 @@
 
 
 
-#===================================
+#=====================================================
 
 
 # Given a year, report if it is a leap year.
@@ -122,25 +122,25 @@
 
 
 
-def leap_year?(number)
-  if (number % 4 == 0) && (number % 100 != 0) || (number % 400 == 0)
-    return true
-  else 
-    false
-  end     
-end 
+# def leap_year?(number)
+#   if (number % 4 == 0) && (number % 100 != 0) || (number % 400 == 0)
+#     return true
+#   else 
+#     false
+#   end     
+# end 
 
 
 
-p leap_year?(1997)
-p leap_year?(1996)
-p leap_year?(2000)
-p leap_year?(400)
-p leap_year?(250)
-p leap_year?(1800)
-p leap_year?(1703)
-p leap_year?(1911)
-p leap_year?(1912)
+# p leap_year?(1997)
+# p leap_year?(1996)
+# p leap_year?(2000)
+# p leap_year?(400)
+# p leap_year?(250)
+# p leap_year?(1800)
+# p leap_year?(1703)
+# p leap_year?(1911)
+# p leap_year?(1912)
 
 
 
@@ -164,6 +164,25 @@ p leap_year?(1912)
 # end 
 
 # p multiples(1000)
+
+
+def multiples(number)
+  index = 0
+  sum = 0
+  while index < 1000
+    if index % 3 == 0
+      sum += index
+    elsif index % 5 == 0
+      sum += index
+    end 
+    index += 1
+  end 
+  sum      
+      
+
+end 
+
+p multiples(1000)
 
 
 #======================================================
