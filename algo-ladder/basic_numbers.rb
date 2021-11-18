@@ -166,23 +166,23 @@
 # p multiples(1000)
 
 
-def multiples(number)
-  index = 0
-  sum = 0
-  while index < 1000
-    if index % 3 == 0
-      sum += index
-    elsif index % 5 == 0
-      sum += index
-    end 
-    index += 1
-  end 
-  sum      
+# def multiples(number)
+#   index = 0
+#   sum = 0
+#   while index < 1000
+#     if index % 3 == 0
+#       sum += index
+#     elsif index % 5 == 0
+#       sum += index
+#     end 
+#     index += 1
+#   end 
+#   sum      
       
 
-end 
+# end 
 
-p multiples(1000)
+# p multiples(1000)
 
 
 #======================================================
@@ -250,6 +250,23 @@ p multiples(1000)
 # end
 
 # p collatz(12)  # => 9
+
+
+def collatz(number)
+  steps = 0
+  while number > 1
+    if number % 2 == 0
+      number = number / 2
+    else 
+      number = (number * 3) + 1
+    end 
+    steps += 1
+  end 
+  steps  
+end 
+
+
+p collatz(22)
 
 #=====================================================
 
