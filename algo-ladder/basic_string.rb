@@ -166,19 +166,42 @@
 # Output: 0
 
 
-def hamming(string1, string2)
-  index = 0
-  differences = 0
-  while index < string1.length
-    if string1[index] != string2[index]
-      differences += 1
-    end 
-    index += 1
-  end     
-  differences
-end 
+# def hamming(string1, string2)
+#   index = 0
+#   differences = 0
+#   while index < string1.length
+#     if string1[index] != string2[index]
+#       differences += 1
+#     end 
+#     index += 1
+#   end     
+#   differences
+# end 
 
 
-p hamming("AMQDEFG", "ABCXEOG")
+# p hamming("AMQDEFG", "ABCXEOG")
 
 #==============================================
+
+
+# Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+# Input: “popcorn is so cool isn’t it yeah i thought so”
+# Output: “so thought i yeah it isn’t cool so is popcorn”
+
+
+def reverse_words(string)
+  string = string.split(" ")
+  new_string = []
+  index = string.length - 1
+  while index >= 0
+    new_string << string[index]
+    index -= 1
+  end 
+  new_string.join(" ")  
+
+end 
+
+p reverse_words("popcorn is so cool isn’t it yeah i thought so")
+
+#======================================
