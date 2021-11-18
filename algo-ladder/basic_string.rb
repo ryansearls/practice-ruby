@@ -122,35 +122,63 @@
 # Output: false
 
 
-def palindrome?(string)
-  index1 = 0
-  index2 = string.length - 1
-  if string[index1] == string[index2]
-    index1 += 1
-    index2 -= 1
-  else 
-    return false
-  end 
+# def palindrome?(string)
+#   index1 = 0
+#   index2 = string.length - 1
+#   if string[index1] == string[index2]
+#     index1 += 1
+#     index2 -= 1
+#   else 
+#     return false
+#   end 
   
-  return true 
-end 
+#   return true 
+# end 
 
-p palindrome?("raceca")
+# p palindrome?("raceca")
 
 
-#daniel's
-def palindrome?(string)
-  i = 0
-  while i < (string.length / 2)
-    if string[i] != string[-(i + 1)]
-      return false
-    else
-      i += 1
-    end
-  end
-  return true
-end
+# #daniel's
+# def palindrome?(string)
+#   i = 0
+#   while i < (string.length / 2)
+#     if string[i] != string[-(i + 1)]
+#       return false
+#     else
+#       i += 1
+#     end
+#   end
+#   return true
+# end
 
-p palindrome?("whatupbutt")
+# p palindrome?("whatupbutt")
 
 #===========================================
+
+# Given two strings of equal length, write a function that returns the number of characters that are different between the two strings.
+
+# Input: "ABCDEFG", "ABCXEOG"
+# Output: 2
+
+# Explanation: While the A, B, C, E, and G are in the same place for both strings, they have different characters in the other spaces. Since there are 2 such spaces that are different (the D and F in the first string), we return 2.
+
+# Input: "ABCDEFG", "ABCDEFG",
+# Output: 0
+
+
+def hamming(string1, string2)
+  index = 0
+  differences = 0
+  while index < string1.length
+    if string1[index] != string2[index]
+      differences += 1
+    end 
+    index += 1
+  end     
+  differences
+end 
+
+
+p hamming("AMQDEFG", "ABCXEOG")
+
+#==============================================
