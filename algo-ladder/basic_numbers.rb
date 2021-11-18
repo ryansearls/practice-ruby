@@ -54,29 +54,29 @@
 
 
 
-def fizzbuzz(n)
-  index = 1
-  while index <= n
-    if index % 5 == 0 && index % 3 == 0
-      puts "FIZZBUZZ"
-    elsif index % 3 == 0
-      puts "FIZZ"
-    elsif index % 5 == 0
-      puts "BUZZ"
-    else 
-      p index
-    end 
-    index += 1
-  end 
-end 
+# def fizzbuzz(n)
+#   index = 1
+#   while index <= n
+#     if index % 5 == 0 && index % 3 == 0
+#       puts "FIZZBUZZ"
+#     elsif index % 3 == 0
+#       puts "FIZZ"
+#     elsif index % 5 == 0
+#       puts "BUZZ"
+#     else 
+#       p index
+#     end 
+#     index += 1
+#   end 
+# end 
 
-p fizzbuzz(25)
-p fizzbuzz(10)
-p fizzbuzz(2)
-p fizzbuzz(8)
-p fizzbuzz(11)
-p fizzbuzz(12)
-p fizzbuzz(17)
+# p fizzbuzz(25)
+# p fizzbuzz(10)
+# p fizzbuzz(2)
+# p fizzbuzz(8)
+# p fizzbuzz(11)
+# p fizzbuzz(12)
+# p fizzbuzz(17)
 
 #===============================================
 
@@ -104,6 +104,8 @@ p fizzbuzz(17)
 
 # p fib(9)   #21
 
+
+
 #===================================
 
 
@@ -119,23 +121,27 @@ p fizzbuzz(17)
 # If your language provides a method in the standard library that does this look-up, pretend it doesnt exist and implement it yourself.
 
 
-# def leap_year?(year)
-#   if (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)
-#     return true
-#   else 
-#     false 
-#   end     
-# end 
 
-# p leap_year?(1997)
-# p leap_year?(1996)
-# p leap_year?(2000)
-# p leap_year?(400)
-# p leap_year?(250)
-# p leap_year?(1800)
-# p leap_year?(1703)
-# p leap_year?(1911)
-# p leap_year?(1912)
+def leap_year?(number)
+  if (number % 4 == 0) && (number % 100 != 0) || (number % 400 == 0)
+    return true
+  else 
+    false
+  end     
+end 
+
+
+
+p leap_year?(1997)
+p leap_year?(1996)
+p leap_year?(2000)
+p leap_year?(400)
+p leap_year?(250)
+p leap_year?(1800)
+p leap_year?(1703)
+p leap_year?(1911)
+p leap_year?(1912)
+
 
 
 #============================================================
