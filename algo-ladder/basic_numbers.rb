@@ -23,6 +23,8 @@
 # p prime?(15) #false
 
 
+
+
 #============================================
 
 # Write a function that prints out every number from 1 to N, with the following exceptions:
@@ -49,6 +51,34 @@
 # end 
 
 # fizzbuzz(17)
+
+
+
+def fizzbuzz(n)
+  index = 1
+  while index <= n
+    if index % 5 == 0 && index % 3 == 0
+      puts "FIZZBUZZ"
+    elsif index % 3 == 0
+      puts "FIZZ"
+    elsif index % 5 == 0
+      puts "BUZZ"
+    else 
+      p index
+    end 
+    index += 1
+  end 
+end 
+
+p fizzbuzz(25)
+p fizzbuzz(10)
+p fizzbuzz(2)
+p fizzbuzz(8)
+p fizzbuzz(11)
+p fizzbuzz(12)
+p fizzbuzz(17)
+
+#===============================================
 
 
 # Write a function that gives the Nth number of the Fibonacci Sequence. The Fibonacci sequence begins with 0 and 1, and every number thereafter is the sum of the previous two numbers. So the sequence goes like this:

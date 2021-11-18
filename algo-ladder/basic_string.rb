@@ -190,18 +190,18 @@
 # Output: “so thought i yeah it isn’t cool so is popcorn”
 
 
-def reverse_words(string)
-  string = string.split(" ")
-  new_string = []
-  index = string.length - 1
-  while index >= 0
-    new_string << string[index]
-    index -= 1
-  end 
-  new_string.join(" ")  
+# def reverse_words(string)
+#   string = string.split(" ")
+#   new_string = []
+#   index = string.length - 1
+#   while index >= 0
+#     new_string << string[index]
+#     index -= 1
+#   end 
+#   new_string.join(" ")  
 
-end 
+# end 
 
-p reverse_words("popcorn is so cool isn’t it yeah i thought so")
+# p reverse_words("popcorn is so cool isn’t it yeah i thought so")
 
 #======================================
