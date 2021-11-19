@@ -62,31 +62,35 @@ return total_votes
 
 
 
+def count_votes(votes)
+  final_votes = {}
 
-
-
-# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
-
-# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
-
-# Output: {"Dewey" => 6, "Truman" => 5}
-
-# Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
-
-
-def votes(array)
-  hash = {}
-  index = 0
-  while index < array.length
-    if hash[:key]
-      hash[:key] += 1
+  votes.each do |candidate|
+    if final_votes[candidate]
+      final_votes[candidate] += 1
     else 
-      hash[:key] = 1
+      final_votes[candidate] = 1
     end 
-    index += 1
-  end       
-  hash
+  end   
+  final_votes
 end 
 
 
-p votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+p count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+
+
+
+# def votes(array)
+#   hash = {}
+#   index = 0
+#   while index < array.length
+#     if hash["key"]
+#       hash["key"] += 1
+#     else 
+#       hash["key"] = 1
+#     end 
+#     index += 1
+#   end       
+#   hash
+# end 
+

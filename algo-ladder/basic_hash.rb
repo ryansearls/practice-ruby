@@ -61,6 +61,20 @@
 
 # end   
 
+
+# def count_votes(votes)
+#   final_votes = {}
+
+#   votes.each do |candidate|
+#     if final_votes[candidate]
+#       final_votes[candidate] += 1
+#     else 
+#       final_votes[candidate] = 1
+#     end 
+#   end   
+#   final_votes
+# end 
+
 # p votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
 
 #================================================================================
