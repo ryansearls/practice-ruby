@@ -252,21 +252,21 @@
 # p collatz(12)  # => 9
 
 
-def collatz(number)
-  steps = 0
-  while number > 1
-    if number % 2 == 0
-      number = number / 2
-    else 
-      number = (number * 3) + 1
-    end 
-    steps += 1
-  end 
-  steps  
-end 
+# def collatz(number)
+#   steps = 0
+#   while number > 1
+#     if number % 2 == 0
+#       number = number / 2
+#     else 
+#       number = (number * 3) + 1
+#     end 
+#     steps += 1
+#   end 
+#   steps  
+# end 
 
 
-p collatz(22)
+# p collatz(22)
 
 #=====================================================
 
@@ -297,6 +297,8 @@ p collatz(22)
 
 # p largest_palindrome_product(10, 99)    # => 9009
 # p largest_palindrome_product(100, 999)  # => 906609
+
+
 
 
 #=================================================================

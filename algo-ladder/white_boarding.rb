@@ -42,20 +42,51 @@ return total_votes
   
 =end
 
-def votes(candidates)
-  index = 0
-  total_votes = {"Dewey" => 0, "Truman" => 0}
+# def votes(candidates)
+#   index = 0
+#   total_votes = {"Dewey" => 0, "Truman" => 0}
 
-  while index < candidates.length
-    if candidates[index] == "Dewey"
-      total_votes["Dewey"] += 1
-    else candidates[index] == "Truman"
-      total_votes["Truman"] += 1
+#   while index < candidates.length
+#     if candidates[index] == "Dewey"
+#       total_votes["Dewey"] += 1
+#     else candidates[index] == "Truman"
+#       total_votes["Truman"] += 1
+#     end 
+#     index += 1
+#   end   
+#   total_votes
+
+# end   
+
+# p votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+
+
+
+
+
+
+# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# Output: {"Dewey" => 6, "Truman" => 5}
+
+# Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+
+def votes(array)
+  hash = {}
+  index = 0
+  while index < array.length
+    if hash[:key]
+      hash[:key] += 1
+    else 
+      hash[:key] = 1
     end 
     index += 1
-  end   
-  total_votes
+  end       
+  hash
+end 
 
-end   
 
 p votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
