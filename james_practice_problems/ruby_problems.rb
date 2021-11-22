@@ -72,41 +72,60 @@
 
 
 
-def is_valid_email?(string)
-  parts = string.split("@")
+# def is_valid_email?(string)
+#   parts = string.split("@")
   
-  if parts.length != 2
-    return false
-  end 
+#   if parts.length != 2
+#     return false
+#   end 
   
-  first_part = parts[0]
-  second_part = parts[1]
-  alpha = "abcdefghijklmnopqrstuvwxyz"
+#   first_part = parts[0]
+#   second_part = parts[1]
+#   alpha = "abcdefghijklmnopqrstuvwxyz"
 
-  index = 0
-  while index < first_part.length
-    char = first_part[index]
-    if !alpha.include?(char)
-      return false
-    end 
-    index += 1
-  end 
+#   index = 0
+#   while index < first_part.length
+#     char = first_part[index]
+#     if !alpha.include?(char)
+#       return false
+#     end 
+#     index += 1
+#   end 
   
-  if second_part.split(".").length == 2
-    return true
-  else 
-    return false
-  end     
+#   if second_part.split(".").length == 2
+#     return true
+#   else 
+#     return false
+#   end     
 
 
-end
+# end
 
-p is_valid_email?("abc@xy.z")         # => true
-p is_valid_email?("jdoe@gmail.com")   # => true
-p is_valid_email?("jdoe@g@mail.com")  # => false
-p is_valid_email?("jdoe42@gmail.com") # => false
-p is_valid_email?("jdoegmail.com")    # => false
-p is_valid_email?("az@email")         # => false
+# p is_valid_email?("abc@xy.z")         # => true
+# p is_valid_email?("jdoe@gmail.com")   # => true
+# p is_valid_email?("jdoe@g@mail.com")  # => false
+# p is_valid_email?("jdoe42@gmail.com") # => false
+# p is_valid_email?("jdoegmail.com")    # => false
+# p is_valid_email?("az@email")         # => false
 
 
 #===========================================
+
+
+def count_vowels(word)
+  vowels = "aeiou"
+  letters = word.split("") 
+  count = 0
+
+  letters.each do |char|
+    if vowels.include?(char)
+      count += 1
+    end
+  end
+
+  count 
+end
+
+p count_vowels("apple") # 2
+p count_vowels("chicken") # 2
+p count_vowels("lllllll") # 0 
