@@ -129,3 +129,24 @@ end
 p count_vowels("apple") # 2
 p count_vowels("chicken") # 2
 p count_vowels("lllllll") # 0 
+
+
+def count_vowels(word)
+  vowels = "aeiou"
+  count = 0
+  i = 0
+
+  while i < word.length 
+    char = word[i]         
+    if vowels.include?(char)
+      count += 1
+    end
+    i += 1 
+  end
+
+  count 
+end
+
+p count_vowels("apple") # 2
+p count_vowels("chicken") # 2
+p count_vowels("lllllll") # 0 
