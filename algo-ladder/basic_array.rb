@@ -21,6 +21,22 @@
 
 # p addition([1, 2, 3, 4])
 
+
+
+
+def sum(array)
+  sum = 0
+  index = 0
+  while index < array.length
+    sum += array[index]
+    index += 1
+  end 
+  sum
+end 
+
+
+p sum([1, 2, 3, 4])
+
 #============================================
 
 
