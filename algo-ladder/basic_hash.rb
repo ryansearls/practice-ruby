@@ -28,7 +28,7 @@
 
 
 
-p frequent_letter("peter piper picked a peck of pickled peppers")
+# p frequent_letter("peter piper picked a peck of pickled peppers")
 
 
 #?????????????????????????????????????????
@@ -105,6 +105,27 @@ p frequent_letter("peter piper picked a peck of pickled peppers")
 # p entire_menu({"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2})
 
 
+# def whole_menu(hash)
+#   sum = 0
+#   hash.each do |_k, v|
+#     sum += v
+#   end
+#   sum
+# end
+# p whole_menu({"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2})
+
+
+# def whole_menu(hash)
+#   sum = 0
+#   hash.each_value do |v|
+#     sum += v
+#   end
+#   sum
+# end
+# p whole_menu({"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2})
+
+
+
 #=====================================================================
 
 # Given an array of hashes that represent a list of social media posts, return a new array that only contains the posts that have at least 1000 likes.
@@ -160,43 +181,43 @@ p frequent_letter("peter piper picked a peck of pickled peppers")
 
 #==================================================
 
-Given an array of social media posts and a hash of users, return a list of posts (as an array of hashes) that replaces the submitted_by id number as the person's actual name.
+# Given an array of social media posts and a hash of users, return a list of posts (as an array of hashes) that replaces the submitted_by id number as the person's actual name.
 
-For example, given this array of posts (note that the submitted_by is an id number):
+# For example, given this array of posts (note that the submitted_by is an id number):
 
-[
-{title: 'Me Eating Pizza', submitted_by: 231, likes: 1549},
-{title: 'i never knew how cool i was until now', submitted_by: 989, likes: 3},
-{title: 'best selfie evar!!!', submitted_by: 111, likes: 1092},
-{title: 'Mondays are the worst', submitted_by: 403, likes: 644}
-]
+# [
+# {title: 'Me Eating Pizza', submitted_by: 231, likes: 1549},
+# {title: 'i never knew how cool i was until now', submitted_by: 989, likes: 3},
+# {title: 'best selfie evar!!!', submitted_by: 111, likes: 1092},
+# {title: 'Mondays are the worst', submitted_by: 403, likes: 644}
+# ]
 
-And this hash of users (the key is the id number and the value is the user's real name):
+# And this hash of users (the key is the id number and the value is the user's real name):
 
-users = {403 => "Aunty Em", 231 => "Joelle P.", 989 => "Lyndon Johnson", 111 => "Patti Q."}
+# users = {403 => "Aunty Em", 231 => "Joelle P.", 989 => "Lyndon Johnson", 111 => "Patti Q."}
 
-Return the array of posts as follows:
+# Return the array of posts as follows:
 
-[
-{title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
-{title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
-{title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
-{title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
-]
+# [
+# {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+# {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+# {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+# {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+# ]
 
 
 
 #=====================================
 
-Given two strings, return true if they are anagrams of each other, and false if they are not. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
+# Given two strings, return true if they are anagrams of each other, and false if they are not. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
 
-Do not use any built-in sort methods.
+# Do not use any built-in sort methods.
 
-Input: “silent”, “listen”
-Output: true
+# Input: “silent”, “listen”
+# Output: true
 
-Input: “frog”, “bear”
-Output: false
+# Input: “frog”, “bear”
+# Output: false
 
 #===========================================
 
