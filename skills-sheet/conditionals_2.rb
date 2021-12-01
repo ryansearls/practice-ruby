@@ -28,14 +28,29 @@
 # Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
 
 
-num1 = 3
-num2 = 7
+# num1 = 3
+# num2 = 7
 
-if num1 < 10 && num2 < 10
-  p 1
-else 
-  p 0
-end 
+# if num1 < 10 && num2 < 10
+#   p 1
+# else 
+#   p 0
+# end 
 
 #==========================================
+
+# Use a variable to store a number, then write a condition that prints 1 if the number is over 9000, and prints -1 otherwise.
+
+
+power_level = 9321
+if power_level > 9000
+  p 1
+else
+  p -1
+end
+
+
+#==========================================
+
+
 
