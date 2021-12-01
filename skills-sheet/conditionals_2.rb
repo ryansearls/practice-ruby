@@ -68,3 +68,15 @@
 
 
 #========================================
+
+# Use variables to store two numbers, then write a condition that prints 100 if either number is greater than 10, and prints -100 otherwise.
+
+# number1 = 20
+# number2 = 4
+# if number1 > 10 || number2 > 10
+#   p 100
+# else
+#   p -100
+# end
+
+#==========================================
