@@ -189,7 +189,7 @@
 
 
 
-#=========================================
+#===============================================================
 
 
 
@@ -224,7 +224,27 @@
 # p rna("ACGTGGTCTTAA")
 
 
-#==================================================
+# def transcriped(string)
+#   rna = ""
+#   transcription = {
+#     "G" => "C", 
+#     "C" => "G",
+#     "T" => "A",
+#     "A" => "U"
+#   }
+
+#   string.each_char do |char|
+#     rna += transcription[char]
+#   end
+
+#   rna 
+# end
+
+# p transcriped("ACGTGGTCTTAA") #=> "UGCACCAGAAUU"
+
+
+
+#=====================================================================
 
 # Given an array of social media posts and a hash of users, return a list of posts (as an array of hashes) that replaces the submitted_by id number as the person's actual name.
 
