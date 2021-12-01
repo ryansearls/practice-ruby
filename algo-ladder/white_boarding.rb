@@ -222,3 +222,5 @@ p transcriped("ACGTGGTCTTAA") #=> "UGCACCAGAAUU"
 
 
 
+
+

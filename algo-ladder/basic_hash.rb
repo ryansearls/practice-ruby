@@ -1,41 +1,41 @@
-hash = { "name" => "App Academy", "color" => "red" }
+# hash = { "name" => "App Academy", "color" => "red" }
 
-p hash["color"]  # prints "red"
-p hash["age"]    # prints nil
+# p hash["color"]  # prints "red"
+# p hash["age"]    # prints nil
 
-k = "color"
-p hash[k]        # prints "red"
+# k = "color"
+# p hash[k]        # prints "red"
 
-hash["age"] = 5
-p hash           # prints {"name"=>"App Academy", "color"=>"red", "age"=>5}
+# hash["age"] = 5
+# p hash           # prints {"name"=>"App Academy", "color"=>"red", "age"=>5}
 
 
-#============================================================================
+# #============================================================================
 
-hash = { "name" => "App Academy", "color" => "red" }
+# hash = { "name" => "App Academy", "color" => "red" }
 
-p hash.has_key?("name")             # prints true
-p hash.has_key?("age")              # prints false
-p hash.has_key?("red")              # prints false
+# p hash.has_key?("name")             # prints true
+# p hash.has_key?("age")              # prints false
+# p hash.has_key?("red")              # prints false
 
-p hash.has_value?("App Academy")    # prints true
-p hash.has_value?(20)               # prints false
-p hash.has_value?("color")          # prints false
+# p hash.has_value?("App Academy")    # prints true
+# p hash.has_value?(20)               # prints false
+# p hash.has_value?("color")          # prints false
 
 #========================================================================
 
 
-hash = { "name" => "App Academy", "color" => "red" }
+# hash = { "name" => "App Academy", "color" => "red" }
 
-hash.each { |key, val| p key + ', ' + val} # prints
-# "name, App Academy"
-# "color, red"
+# hash.each { |key, val| p key + ', ' + val} # prints
+# # "name, App Academy"
+# # "color, red"
 
-hash.each_key { |key| p key } # prints
-# "name"
-# "color"
+# hash.each_key { |key| p key } # prints
+# # "name"
+# # "color"
 
-hash.each_value { |val| p val } # prints
+# hash.each_value { |val| p val } # prints
 # "App Academy"
 # "red"
 
@@ -251,8 +251,25 @@ hash.each_value { |val| p val } # prints
 # ]
 
 
+def complete_the_data(array, users_hash)
+  new_array = []
 
-#=====================================
+  array.each do |hash|
+    hash[:submitted_by] = users_hash[hash[:submitted_by]]
+    new_array << hash
+  end   
+
+  new_array 
+end 
+
+
+p complete_the_data([
+  {title: 'Me Eating Pizza', submitted_by: 231, likes: 1549},
+  {title: 'i never knew how cool i was until now', submitted_by: 989, likes: 3},
+  {title: 'best selfie evar!!!', submitted_by: 111, likes: 1092},
+  {title: 'Mondays are the worst', submitted_by: 403, likes: 644}
+  ], {403 => "Aunty Em", 231 => "Joelle P.", 989 => "Lyndon Johnson", 111 => "Patti Q."})
+#==================================================================
 
 # Given two strings, return true if they are anagrams of each other, and false if they are not. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
 
