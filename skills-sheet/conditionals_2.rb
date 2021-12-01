@@ -24,3 +24,18 @@
 
 
 #================================================================
+
+# Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
+
+
+num1 = 3
+num2 = 7
+
+if num1 < 10 && num2 < 10
+  p 1
+else 
+  p 0
+end 
+
+#==========================================
+
