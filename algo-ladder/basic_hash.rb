@@ -43,7 +43,7 @@
 #=====================================================================
 
 
-# Given a string, find the most commonly occurring letter.
+# #1 # Given a string, find the most commonly occurring letter.
 
 # Input: “peter piper picked a peck of pickled peppers”
 # Output: “p”
@@ -79,7 +79,7 @@
 #?????????????????????????????????????????
 
 
-# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+#2 # Given an array of strings, return a hash that provides of a count of how many times each string occurs.
 
 # Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
 
@@ -125,7 +125,7 @@
 #================================================================================
 
 
-# Given a hash, where the keys are strings representing food items, and the values are numbers representing the price of each food, return the amount someone would pay if theyd order one of each food from the entire menu.
+#3 # Given a hash, where the keys are strings representing food items, and the values are numbers representing the price of each food, return the amount someone would pay if theyd order one of each food from the entire menu.
 
 # Input: {"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2}
 
@@ -173,7 +173,7 @@
 
 #=====================================================================
 
-# Given an array of hashes that represent a list of social media posts, return a new array that only contains the posts that have at least 1000 likes.
+#4 # Given an array of hashes that represent a list of social media posts, return a new array that only contains the posts that have at least 1000 likes.
 
 # Input: [
 # {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
@@ -190,12 +190,33 @@
 
 
 
+# def popular_posts(array)
+#   new_array = []
+
+#   array.each do |hash|
+#     hash.each do |k, v|
+#      if hash[:likes] >= 1000
+#       new_array << hash 
+#       break 
+#      end 
+#     end 
+#   end 
+#   new_array   
+# end 
+
+
+# p popular_posts([
+#   {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+#   {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+#   {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+#   {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+#   ])
 
 #===============================================================
 
 
 
-# Given a DNA strand, return its RNA complement (per RNA transcription).
+#5 # Given a DNA strand, return its RNA complement (per RNA transcription).
 
 # Both DNA and RNA strands are a sequence of nucleotides. Here we're representing the sequences with single-letter characters (e.g. a sample strand may look like: "AGCA".)
 
@@ -248,7 +269,7 @@
 
 #=====================================================================
 
-# Given an array of social media posts and a hash of users, return a list of posts (as an array of hashes) that replaces the submitted_by id number as the person's actual name.
+#6 # Given an array of social media posts and a hash of users, return a list of posts (as an array of hashes) that replaces the submitted_by id number as the person's actual name.
 
 # For example, given this array of posts (note that the submitted_by is an id number):
 
