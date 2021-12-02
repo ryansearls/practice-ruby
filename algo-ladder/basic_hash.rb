@@ -189,6 +189,8 @@
 
 
 
+
+
 #===============================================================
 
 
@@ -271,24 +273,24 @@
 # ]
 
 
-def complete_the_data(array, users_hash)
-  new_array = []
+# def complete_the_data(array, users_hash)
+#   new_array = []
 
-  array.each do |hash|
-    hash[:submitted_by] = users_hash[hash[:submitted_by]]
-    new_array << hash
-  end   
+#   array.each do |hash|
+#     hash[:submitted_by] = users_hash[hash[:submitted_by]]
+#     new_array << hash
+#   end   
 
-  new_array 
-end 
+#   new_array 
+# end 
 
 
-p complete_the_data([
-  {title: 'Me Eating Pizza', submitted_by: 231, likes: 1549},
-  {title: 'i never knew how cool i was until now', submitted_by: 989, likes: 3},
-  {title: 'best selfie evar!!!', submitted_by: 111, likes: 1092},
-  {title: 'Mondays are the worst', submitted_by: 403, likes: 644}
-  ], {403 => "Aunty Em", 231 => "Joelle P.", 989 => "Lyndon Johnson", 111 => "Patti Q."})
+# p complete_the_data([
+#   {title: 'Me Eating Pizza', submitted_by: 231, likes: 1549},
+#   {title: 'i never knew how cool i was until now', submitted_by: 989, likes: 3},
+#   {title: 'best selfie evar!!!', submitted_by: 111, likes: 1092},
+#   {title: 'Mondays are the worst', submitted_by: 403, likes: 644}
+#   ], {403 => "Aunty Em", 231 => "Joelle P.", 989 => "Lyndon Johnson", 111 => "Patti Q."})
 #==================================================================
 
 # Given two strings, return true if they are anagrams of each other, and false if they are not. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.

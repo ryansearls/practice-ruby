@@ -179,38 +179,38 @@ return total_votes
 # Output: 'UGCACCAGAAUU'
 
 
-def rna(string)
-  hash = {"G" => "C", "C" => "G", "T" => "A", "A" => "U"}
-  new_string = ''
-  index = 0
-  while index < string.length
-    new_string << hash[string[index]]
-    index += 1
-  end 
-  new_string   
+# def rna(string)
+#   hash = {"G" => "C", "C" => "G", "T" => "A", "A" => "U"}
+#   new_string = ''
+#   index = 0
+#   while index < string.length
+#     new_string << hash[string[index]]
+#     index += 1
+#   end 
+#   new_string   
 
-end 
+# end 
 
-p rna('ACGTGGTCTTAA')
+# p rna('ACGTGGTCTTAA')
 
 
-def transcriped(string)
-  rna = ""
-  transcription = {
-    "G" => "C", 
-    "C" => "G",
-    "T" => "A",
-    "A" => "U"
-  }
+# def transcriped(string)
+#   rna = ""
+#   transcription = {
+#     "G" => "C", 
+#     "C" => "G",
+#     "T" => "A",
+#     "A" => "U"
+#   }
 
-  string.each_char do |char|
-    rna += transcription[char]
-  end
+#   string.each_char do |char|
+#     rna += transcription[char]
+#   end
 
-  rna 
-end
+#   rna 
+# end
 
-p transcriped("ACGTGGTCTTAA") #=> "UGCACCAGAAUU"
+# p transcriped("ACGTGGTCTTAA") #=> "UGCACCAGAAUU"
 
 
 
@@ -218,6 +218,25 @@ p transcriped("ACGTGGTCTTAA") #=> "UGCACCAGAAUU"
 #=====================================================================
 
 
+def count_votes(array)
+  hash = {}
+  
+  array.each do |candidate|
+    if hash[candidate]
+      hash[candidate] += 1
+    else hash[candidate] = 1
+    end 
+  end      
+
+  hash
+
+end 
+
+
+p count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+
+
+#===============================================================
 
 
 
