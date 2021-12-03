@@ -15,3 +15,20 @@
 # puts "my first name is #{first_name} and my last name is #{last_name}"
 
 #=======================================================================
+
+# 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+
+# word = gets.chomp
+# if word == "marco"
+#   p "polo"
+# end   
+
+#=========================================================================
+
+# 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+
+color1 = "red"
+color2 = "blue"
+color3 = "green"
+
+puts "my favorite colors are " + color1 + " and " + color2 + " and " + color3 + "."
