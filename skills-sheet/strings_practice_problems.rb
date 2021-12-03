@@ -46,12 +46,27 @@
 
 # 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
 
-puts "What is your name?"
-name = gets.chomp
-if name != "Santa"
-  puts "You're not Santa."
-end
+# puts "What is your name?"
+# name = gets.chomp
+# if name != "Santa"
+#   puts "You're not Santa."
+# end
 
 #================================================================================
 
+# 7. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
+
+# book_title = "Practical Object-Oriented Design in Ruby"
+# book_author = "Sandi Metz"
+# puts "The author of " + book_title + " is " + book_author + "."
+
+#================================================================================
+
+# 8. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
+
+# book_title = "Practical Object-Oriented Design in Ruby"
+# book_author = "Sandi Metz"
+# puts "The author of #{book_title} is #{book_author}."
+
+#===============================================================================
 
