@@ -64,11 +64,42 @@
 
 # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
-def convert_to_string(number)
-  return number.to_s
-end
+# def convert_to_string(number)
+#   return number.to_s
+# end
 
-p convert_to_string(4)
+# p convert_to_string(4)
 
 #=============================================================
+
+# 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
+
+# def repeat_string(string)
+#   return string * 5
+# end
+
+# p repeat_string("bob")
+
+#=============================================================
+
+# 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
+
+# def average(number1, number2, number3)
+#   return (number1 + number2 + number3) / 3.0
+# end
+
+# p average(72, 108, 64)
+
+#==========================================================
+
+# 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+def convert_number(number)
+  return number * 10 + 30
+end
+
+p convert_number(2)
+
+#========================================================
+
+
 
