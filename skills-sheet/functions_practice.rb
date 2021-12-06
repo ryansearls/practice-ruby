@@ -29,3 +29,24 @@
 # p subtract(8, 5)
 
 #==============================================================
+
+# 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
+
+# def square(number)
+#   return number * number 
+
+# end 
+
+# p square(6)
+
+#=============================================================
+
+# 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
+
+def get_first_letter(string)
+  return string[0]
+end
+
+p get_first_letter("something")
+
+#=============================================================
