@@ -85,3 +85,23 @@
 
 #=============================================================
 
+#  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+
+def hash_age(array)
+  new_array = []
+  index = 0
+  while index < array.length
+    new_array << array[index][:age]
+    index += 1
+  end 
+  new_array  
+
+
+end 
+
+
+p hash_age([{name: "Alice", age: 27}, 
+            {name: "Blane", age: 16}])
+
+#============================================================
