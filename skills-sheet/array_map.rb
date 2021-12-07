@@ -88,20 +88,40 @@
 #  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
 
-def hash_age(array)
+# def hash_age(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     new_array << array[index][:age]
+#     index += 1
+#   end 
+#   new_array  
+
+
+# end 
+
+
+# p hash_age([{name: "Alice", age: 27}, 
+#             {name: "Blane", age: 16}])
+
+#============================================================
+
+
+#  7. Start with an array of numbers and create a new array with each number divided by 2.
+#     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
+
+def divide_by_two(array)
   new_array = []
   index = 0
-  while index < array.length
-    new_array << array[index][:age]
+  while index < array.length 
+    new_array << array[index] / 2.0
     index += 1
   end 
-  new_array  
-
+  new_array
 
 end 
 
 
-p hash_age([{name: "Alice", age: 27}, 
-            {name: "Blane", age: 16}])
+p divide_by_two([1,2,3])
 
-#============================================================
+#=============================================================
