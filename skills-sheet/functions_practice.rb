@@ -93,11 +93,11 @@
 #==========================================================
 
 # 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
-def convert_number(number)
-  return number * 10 + 30
-end
+# def convert_number(number)
+#   return number * 10 + 30
+# end
 
-p convert_number(2)
+# p convert_number(2)
 
 #========================================================
 
