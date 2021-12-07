@@ -149,18 +149,39 @@
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
 
-def double_age(array)
+# def double_age(array)
+#   new_array = []
+#   index = 0
+#   array.each do |hash|
+#     new_array << hash[:age] * 2
+#   end 
+#   new_array  
+
+# end 
+
+
+# p double_age([{name: "Alice", age: 27}, 
+#               {name: "Blane", age: 16}])
+
+#=================================================================
+
+# 10. Start with an array of numbers and create a new array with each number converted into a string.
+#     For example, [1, 2, 3] becomes ["1", "2", "3"].
+
+def to_string(array)
   new_array = []
-  index = 0
-  array.each do |hash|
-    new_array << hash[:age] * 2
+  array.each do |number|
+    new_array << number.to_s
   end 
-  new_array  
+
+  new_array 
 
 end 
 
+p to_string([1, 2, 3])
 
-p double_age([{name: "Alice", age: 27}, 
-              {name: "Blane", age: 16}])
+#================================================================
 
-#=================================================================
+
+
+
