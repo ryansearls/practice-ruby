@@ -110,18 +110,38 @@
 #  7. Start with an array of numbers and create a new array with each number divided by 2.
 #     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
-def divide_by_two(array)
+# def divide_by_two(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length 
+#     new_array << array[index] / 2.0
+#     index += 1
+#   end 
+#   new_array
+
+# end 
+
+
+# p divide_by_two([1,2,3])
+
+#=============================================================
+
+#  8. Start with an array of strings and create a new array with each string's first letter only.
+#     For example, ["hello", "goodbye"] becomes ["h", "g"].
+
+def first_letter(array)
   new_array = []
   index = 0
-  while index < array.length 
-    new_array << array[index] / 2.0
+  while index < array.length
+    new_array << array[index][0]
     index += 1
   end 
-  new_array
+  new_array  
 
 end 
 
 
-p divide_by_two([1,2,3])
+p first_letter(["hello", "goodbye"])
 
-#=============================================================
+#===============================================================
+
