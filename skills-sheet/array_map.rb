@@ -129,19 +129,38 @@
 #  8. Start with an array of strings and create a new array with each string's first letter only.
 #     For example, ["hello", "goodbye"] becomes ["h", "g"].
 
-def first_letter(array)
+# def first_letter(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     new_array << array[index][0]
+#     index += 1
+#   end 
+#   new_array  
+
+# end 
+
+
+# p first_letter(["hello", "goodbye"])
+
+#===============================================================
+
+# 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
+
+
+def double_age(array)
   new_array = []
   index = 0
-  while index < array.length
-    new_array << array[index][0]
-    index += 1
+  array.each do |hash|
+    new_array << hash[:age] * 2
   end 
   new_array  
 
 end 
 
 
-p first_letter(["hello", "goodbye"])
+p double_age([{name: "Alice", age: 27}, 
+              {name: "Blane", age: 16}])
 
-#===============================================================
-
+#=================================================================
