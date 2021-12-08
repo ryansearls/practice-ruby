@@ -174,4 +174,20 @@
 # 10. Start with an array of numbers and create a new array with only the odd numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
 
+def odd_numbers(array)
+  new_array = []
+  array.each do |number|
+    if number % 2 == 1
+      new_array << number
+    end 
+  end 
+  new_array    
+
+end 
+
+
+p odd_numbers([2, 4, 5, 1, 8, 9, 7])
+
+#=================================================================
+
 
