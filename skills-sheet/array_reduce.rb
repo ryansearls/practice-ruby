@@ -88,6 +88,27 @@
 
 #=================================================================
 
+#  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
+#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
+
+def lowest_price(array)
+  min = array[0]
+  array.each do |hash|
+    if hash[:price] < min[:price]
+      min = hash
+    end 
+  end 
+  min     
+
+
+end 
+
+
+p lowest_price([{name: "chair", price: 100}, 
+                {name: "pencil", price: 1}, 
+                {name: "book", price: 4}])
+
+#=====================================================================
 
 
 
