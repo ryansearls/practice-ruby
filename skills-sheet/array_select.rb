@@ -54,19 +54,35 @@
 
 #  4. Start with an array of numbers and create a new array with only the even numbers.
 
-def even_numbers(array)
-  new_array = []
-  array.each do |number|
-    if number % 2 == 0
-      new_array << number
-    end 
-  end 
-  new_array  
+# def even_numbers(array)
+#   new_array = []
+#   array.each do |number|
+#     if number % 2 == 0
+#       new_array << number
+#     end 
+#   end 
+#   new_array  
 
 
-end 
+# end 
 
 
-p even_numbers([2, 4, 5, 1, 8, 9, 7])
+# p even_numbers([2, 4, 5, 1, 8, 9, 7])
 
 #====================================================================
+
+
+#  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
+#     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
+
+def less_than_four(array)
+  short = []
+  array.each do |string|
+    if string.length < 4 
+      short << string
+    end 
+  end 
+  short 
+end 
+
+p less_than_four(["a", "man", "a", "plan", "a", "canal", "panama"])
