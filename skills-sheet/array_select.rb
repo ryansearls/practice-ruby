@@ -113,19 +113,38 @@
 #  7. Start with an array of numbers and create a new array with only the numbers greater than or equal to 23.
 #     For example, [8, 23, 0, 44, 1980, 3] becomes [23, 44, 1980].
 
-def greater_than_23(array)
+# def greater_than_23(array)
+#   new_array = []
+#   array.each do |number|
+#     if number >= 23
+#       new_array << number
+#     end 
+#   end 
+#   new_array  
+
+
+# end 
+
+
+# p greater_than_23([8, 23, 0, 44, 1980, 3])
+
+#====================================================================
+
+#  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
+#     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
+
+def dont_start_with_b(array)
   new_array = []
-  array.each do |number|
-    if number >= 23
-      new_array << number
+  array.each do |string|
+    if string[0] != "b"
+      new_array << string
     end 
   end 
-  new_array  
-
+  new_array
 
 end 
 
 
-p greater_than_23([8, 23, 0, 44, 1980, 3])
+p dont_start_with_b(["big", "little", "good", "bad"])
 
-#====================================================================
+
