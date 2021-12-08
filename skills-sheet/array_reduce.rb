@@ -130,19 +130,41 @@
 #  8. Start with an array of strings and combine them all into a single string, separated by dashes.
 #     For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
 
-def long_string(array)
-  single_string = "-"
-  array.each do |string|
-    single_string += "#{string}-"
-  end 
-  single_string
+# def long_string(array)
+#   single_string = "-"
+#   array.each do |string|
+#     single_string += "#{string}-"
+#   end 
+#   single_string
 
 
-end 
+# end 
 
-p long_string(["volleyball", "basketball", "badminton"])
+# p long_string(["volleyball", "basketball", "badminton"])
 
 #===================================================================
+
+#  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
+#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
+
+# def shortest_name(array)
+#   name1 = array[0]
+#   array.each do |hash|
+#     if hash[:name].length < name1[:name].length
+#       name1 = hash
+#     end 
+#   end 
+#   name1    
+
+
+# end 
+
+# p shortest_name([{name: "chair", price: 100}, 
+#                 {name: "pencil", price: 1}, 
+#                 {name: "book", price: 4}])
+
+#===================================================================
+
 
 
 
