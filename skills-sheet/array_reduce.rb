@@ -165,6 +165,25 @@
 
 #===================================================================
 
+# 10. Start with an array of numbers and compute the maximum number.
+#     For example, [5, 10, 8, 3] becomes 10.
+
+def maximum(array)
+  max = array[0]
+  array.each do |num|
+    if num > max 
+      max = num
+    end 
+  end
+  max     
+
+
+end 
+
+p maximum([5, 10, 8, 3])
+
+#====================================================================
+
 
 
 
