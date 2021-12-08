@@ -168,17 +168,17 @@
 # 10. Start with an array of numbers and create a new array with each number converted into a string.
 #     For example, [1, 2, 3] becomes ["1", "2", "3"].
 
-def to_string(array)
-  new_array = []
-  array.each do |number|
-    new_array << number.to_s
-  end 
+# def to_string(array)
+#   new_array = []
+#   array.each do |number|
+#     new_array << number.to_s
+#   end 
 
-  new_array 
+#   new_array 
 
-end 
+# end 
 
-p to_string([1, 2, 3])
+# p to_string([1, 2, 3])
 
 #================================================================
 
