@@ -127,6 +127,23 @@
 
 #======================================================================
 
+#  8. Start with an array of strings and combine them all into a single string, separated by dashes.
+#     For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
+
+def long_string(array)
+  single_string = "-"
+  array.each do |string|
+    single_string += "#{string}-"
+  end 
+  single_string
+
+
+end 
+
+p long_string(["volleyball", "basketball", "badminton"])
+
+#===================================================================
+
 
 
 
