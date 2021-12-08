@@ -35,21 +35,41 @@
 
 #  3. Start with an array of hashes and compute the sum of the prices (from the :price key).
 
-def total_price(array)
-  sum = 0
-  array.each do |hash|
-    sum += hash[:price]
-  end 
-  sum  
+# def total_price(array)
+#   sum = 0
+#   array.each do |hash|
+#     sum += hash[:price]
+#   end 
+#   sum  
 
-end 
+# end 
 
 
-p total_price([{name: "chair", price: 100}, 
-              {name: "pencil", price: 1}, 
-              {name: "book", price: 4}])
+# p total_price([{name: "chair", price: 100}, 
+#               {name: "pencil", price: 1}, 
+#               {name: "book", price: 4}])
 
 #======================================================================
+
+#  4. Start with an array of numbers and compute the the minumum number.
+#     For example, [5, 10, 8, 3] becomes 3.
+
+# def minimum(array)
+#   min = array[0]
+#   index = 1
+#   while index < array.length
+#     if array[index] < min
+#       min = array[index]
+#     end 
+#     index += 1
+#   end 
+#   min     
+
+# end 
+
+# p minimum([5, 10, 8, 3])
+
+#==============================================================
 
 
 
