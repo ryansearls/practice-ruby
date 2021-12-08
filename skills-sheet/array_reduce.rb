@@ -33,5 +33,24 @@
 
 #====================================================================
 
+#  3. Start with an array of hashes and compute the sum of the prices (from the :price key).
+
+def total_price(array)
+  sum = 0
+  array.each do |hash|
+    sum += hash[:price]
+  end 
+  sum  
+
+end 
+
+
+p total_price([{name: "chair", price: 100}, 
+              {name: "pencil", price: 1}, 
+              {name: "book", price: 4}])
+
+#======================================================================
+
+
 
 
