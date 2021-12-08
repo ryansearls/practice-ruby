@@ -71,6 +71,25 @@
 
 #==============================================================
 
+#  5. Start with an array of strings and compute the total length of all the strings.
+#     For example, ["volleyball", "basketball", "badminton"] becomes 29.
+
+# def total_length(array)
+#   length = 0
+#   array.each do |string|
+#     length += string.length
+#   end 
+#   length   
+
+# end 
+
+
+# p total_length(["volleyball", "basketball", "badminton"])
+
+#=================================================================
+
+
+
 
 
 
