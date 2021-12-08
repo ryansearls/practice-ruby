@@ -36,18 +36,37 @@
 #  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
 
-def over_five(array)
-  new_array = []
-  array.each do |hash|
-    if hash[:price] > 5
-      new_array << hash
-    end 
-  end 
-  new_array    
+# def over_five(array)
+#   new_array = []
+#   array.each do |hash|
+#     if hash[:price] > 5
+#       new_array << hash
+#     end 
+#   end 
+#   new_array    
 
-end 
-p over_five([{name: "chair", price: 100}, 
-              {name: "pencil", price: 1}, 
-              {name: "book", price: 4}])
+# end 
+# p over_five([{name: "chair", price: 100}, 
+#               {name: "pencil", price: 1}, 
+#               {name: "book", price: 4}])
 
 #===================================================================
+
+#  4. Start with an array of numbers and create a new array with only the even numbers.
+
+def even_numbers(array)
+  new_array = []
+  array.each do |number|
+    if number % 2 == 0
+      new_array << number
+    end 
+  end 
+  new_array  
+
+
+end 
+
+
+p even_numbers([2, 4, 5, 1, 8, 9, 7])
+
+#====================================================================
