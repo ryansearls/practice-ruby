@@ -235,28 +235,65 @@
 # {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
 # ]
 
-def over_1000(array)
-  new_array = []
-  index = 0
-  while index < array.length
-    if array[index][:likes] >= 1000
-      new_array << array[index]
-    end 
-    index += 1
-  end 
-  new_array    
+# def over_1000(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     if array[index][:likes] >= 1000
+#       new_array << array[index]
+#     end 
+#     index += 1
+#   end 
+#   new_array    
 
+
+
+# end 
+
+
+# p over_1000([
+#   {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+#   {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+#   {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+#   {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+#   ])
+
+  #===================================================
+
+#   Given a DNA strand, return its RNA complement (per RNA transcription).
+
+# Both DNA and RNA strands are a sequence of nucleotides. Here were representing the sequences with single-letter characters (e.g. a sample strand may look like: "AGCA".)
+
+# Given a string representing a DNA strand, provide its transcribed RNA strand, according to the following pattern:
+
+# G becomes C
+# C becomes G
+# T becomes A
+# A becomes U
+
+# So based on all this, heres a sample input/output:
+
+# Input: 'ACGTGGTCTTAA'
+# Output: 'UGCACCAGAAUU'
+
+def rna(string)
+  complementary_letters = { "G" => "C", "C" => "G", "T" => "A", "A" => "U" }
+  new_string = ""
+  
+  string.each_char do |letter|
+    new_string << complementary_letters[letter]
+  end 
+  
+  new_string
 
 
 end 
 
+p rna('ACGTGGTCTTAA')
 
-p over_1000([
-  {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
-  {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
-  {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
-  {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
-  ])
+
+
+
 
 
 
