@@ -137,18 +137,62 @@
 # [2, 3, 1, 2, 2, 1, 5, 2, 2]
 
 
-def skip_it(array)
-  new_array = []
-  index = 0
-  while index < array.length
-    new_array << array[index]
-    index += array[index] 
+# def skip_it(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     new_array << array[index]
+#     index += array[index] 
+#   end 
+#   new_array  
+
+
+# end 
+
+
+# p skip_it([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+
+#=================================================================
+
+# Given a string, find the most commonly occurring letter.
+
+# Input: “peter piper picked a peck of pickled peppers”
+# Output: “p”
+
+
+# def most_frequent(string)
+
+
+
+# end 
+
+
+# p most_frequent(“peter piper picked a peck of pickled peppers”)
+
+#===============================================================
+
+# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# Output: {"Dewey" => 6, "Truman" => 5}
+
+# Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+def count_votes(array)
+  hash = {}
+   array.each do |candidate|
+    if hash[candidate]
+      hash[candidate] += 1
+    else 
+      hash[candidate] = 1
+    end 
   end 
-  new_array  
+  hash      
 
 
 end 
 
 
-p skip_it([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+p count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
 
