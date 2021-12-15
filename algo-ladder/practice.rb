@@ -92,17 +92,37 @@
 
 # Explanation: (1 x 2 x 3 x 4) = 24
 
-def product(array)
-  total = 1
+# def product(array)
+#   total = 1
   
-  array.each do |number|
-    total *= number
-  end 
-  total   
+#   array.each do |number|
+#     total *= number
+#   end 
+#   total   
 
+# end 
 
-end 
+# p product([1, 2, 3, 4])
 
+#=================================================
 
-p product([1, 2, 3, 4])
+# Given an array, write a function that returns an array that contains the original arrays values in reverse.
+
+# Input: [1, 2, 3, 4, 5]
+# Output: [5, 4, 3, 2, 1]
+
+# def reverse_array(array)
+#   new_array = []
+#   index = array.length - 1
+#   while index >= 0
+#     new_array << array[index]
+#     index -= 1
+#   end 
+#   new_array  
+
+# end 
+
+# p reverse_array([1, 2, 3, 4, 5])
+
+#=====================================================
 
