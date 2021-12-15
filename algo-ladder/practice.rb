@@ -67,21 +67,42 @@
 # Input: [5, 17, -4, 20, 12]
 # Output: 20
 
-def max(array)
-  high = array[0]
-  index = 1
-  while index < array.length
-    if array[index] > high
-      high = array[index]
-    end 
-    index += 1
+# def max(array)
+#   high = array[0]
+#   index = 1
+#   while index < array.length
+#     if array[index] > high
+#       high = array[index]
+#     end 
+#     index += 1
+#   end 
+#   high    
+
+
+# end 
+
+# p max([5, 17, -4, 20, 12])
+
+#==========================================
+
+# Write a function that accepts an array of numbers and returns the product of all the numbers.
+
+# Input: [1, 2, 3, 4]
+# Output: 24
+
+# Explanation: (1 x 2 x 3 x 4) = 24
+
+def product(array)
+  total = 1
+  
+  array.each do |number|
+    total *= number
   end 
-  high    
+  total   
 
 
 end 
 
-p max([5, 17, -4, 20, 12])
 
-#==========================================
+p product([1, 2, 3, 4])
 
