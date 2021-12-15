@@ -179,20 +179,46 @@
 
 # Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
 
-def count_votes(array)
-  hash = {}
-   array.each do |candidate|
-    if hash[candidate]
-      hash[candidate] += 1
-    else 
-      hash[candidate] = 1
-    end 
-  end 
-  hash      
+# def count_votes(array)
+#   hash = {}
+#    array.each do |candidate|
+#     if hash[candidate]
+#       hash[candidate] += 1
+#     else 
+#       hash[candidate] = 1
+#     end 
+#   end 
+#   hash      
 
+
+# end 
+
+
+# p count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+
+#==============================================================
+
+# Given a hash, where the keys are strings representing food items, and the values are numbers representing the price of each food, return the amount someone would pay if theyd order one of each food from the entire menu.
+
+# Input: {"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2}
+
+# Output: 14
+
+# Explanation: If someone would order one of everything on the menu, theyd pay a total of 14 (the sum of all the hashs values).
+
+
+def whole_menu(hash)
+  total = 0
+  hash.each do |k, v|
+    total += v
+  end 
+  total   
 
 end 
 
 
-p count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+p whole_menu({"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2})
+
+
+
 
