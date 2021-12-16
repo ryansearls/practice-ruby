@@ -341,6 +341,25 @@
 
 #=====================================================================
 
+# Write a function that returns the reverse of a given string.
+
+# Input: “abcde”
+# Output: “edcba”
+
+def backwards(string)
+  new_string = ""
+  index = string.length - 1
+  while index >= 0
+    new_string << string[index]
+    index -= 1
+  end 
+  new_string  
+
+end 
+
+p backwards("abcde")
+
+#============================================================
 
 
 
