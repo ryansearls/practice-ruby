@@ -495,13 +495,43 @@
 
 #=======================================================
 
-Given a string of words, write a function that returns a new string that contains the words in reverse order.
+# Given a string of words, write a function that returns a new string that contains the words in reverse order.
 
-Input: “popcorn is so cool isnt it yeah i thought so”
-Output: “so thought i yeah it isnt cool so is popcorn”
+# Input: “popcorn is so cool isnt it yeah i thought so”
+# Output: “so thought i yeah it isnt cool so is popcorn”
 
 
-def reverse
+
+def reverse(string)
+  new_string = string.split(" ")
+  reverse_words = []
+  index = string.length - 1
+  while index >= 0
+    reverse_words << new_string[index]
+    index -= 1
+  end 
+  reverse_words.join(" ")
+
+
+end 
+
+
+p reverse("popcorn is so cool isnt it yeah i thought so")
+
+
+def reverse_words(string)
+  string = string.split(" ")
+  new_string = []
+  index = string.length - 1
+  while index >= 0
+    new_string << string[index]
+    index -= 1
+  end 
+  new_string.join(" ")  
+
+end 
+
+p reverse_words("popcorn is so cool isn’t it yeah i thought so")
 
 
 
