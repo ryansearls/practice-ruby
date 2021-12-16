@@ -443,27 +443,66 @@
 # Input: “baloney”
 # Output: false
 
-def palindrome?(string)
-  index1 = 0
-  index2 = string.length - 1
-  while index1 < string.length
-    if string[index1] != string[index2]
-      return false
-    end 
-    index1 += 1
-    index2 -= 1
-  end 
-  return true   
+# def palindrome?(string)
+#   index1 = 0
+#   index2 = string.length - 1
+#   while index1 < string.length
+#     if string[index1] != string[index2]
+#       return false
+#     end 
+#     index1 += 1
+#     index2 -= 1
+#   end 
+#   return true   
 
 
-end 
+# end 
 
 
-p palindrome?("racecar")
-p palindrome?("rcar")
-p palindrome?("dfbdjsbnvsn")
+# p palindrome?("racecar")
+# p palindrome?("rcar")
+# p palindrome?("dfbdjsbnvsn")
 
 #==============================================================
+
+# Given two strings of equal length, write a function that returns the number of characters that are different between the two strings.
+
+# Input: "ABCDEFG", "ABCXEOG"
+# Output: 2
+
+# Explanation: While the A, B, C, E, and G are in the same place for both strings, they have different characters in the other spaces. Since there are 2 such spaces that are different (the D and F in the first string), we return 2.
+
+# Input: "ABCDEFG", "ABCDEFG",
+# Output: 0
+
+
+# def differences(string1, string2)
+#   total = 0
+#   index = 0
+#   while index < string1.length
+#     if string1[index] != string2[index]
+#       total += 1
+#     end 
+#     index += 1
+#   end 
+#   total     
+
+
+# end 
+
+
+# p differences("ABCDEFG", "ABCXEOG")
+
+#=======================================================
+
+Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+Input: “popcorn is so cool isnt it yeah i thought so”
+Output: “so thought i yeah it isnt cool so is popcorn”
+
+
+def reverse
+
 
 
 
