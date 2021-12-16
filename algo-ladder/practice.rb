@@ -502,36 +502,85 @@
 
 
 
-def reverse(string)
-  new_string = string.split(" ")
-  reverse_words = []
-  index = string.length - 1
-  while index >= 0
-    reverse_words << new_string[index]
-    index -= 1
-  end 
-  reverse_words.join(" ")
+# def reverse(string)
+#   new_string = string.split(" ")
+#   reverse_words = []
+#   index = string.length - 1
+#   while index >= 0
+#     reverse_words << new_string[index]
+#     index -= 1
+#   end 
+#   reverse_words.join(" ")
 
 
+# end 
+
+
+# p reverse("popcorn is so cool isnt it yeah i thought so")
+
+
+# def reverse_words(string)
+#   string = string.split(" ")
+#   new_string = []
+#   index = string.length - 1
+#   while index >= 0
+#     new_string << string[index]
+#     index -= 1
+#   end 
+#   new_string.join(" ")  
+
+# end 
+
+# p reverse_words("popcorn is so cool isn’t it yeah i thought so")
+
+
+#=====================================================
+
+# Write a function that prints out every number from 1 to N, with the following exceptions:
+
+# If the number is divisible by 3, print out "FIZZ".
+# If the number is divisible by 5, print out "BUZZ".
+# If the number is divisible by both 3 and 5, print out "FIZZBUZZ".
+
+# def fizzbuzz(number)
+#   index = 1
+#   while index <= number 
+#     if index % 3 == 0 && index % 5 == 0
+#       puts "fizzbuzz"
+#     elsif index % 5 == 0 
+#       puts "Buzz"
+#     elsif index % 3 == 0
+#       puts "fizz"
+#     else 
+#       p index
+#     end   
+#     index += 1
+#   end 
+
+
+# end 
+
+
+# p fizzbuzz(16)
+
+
+def fizzbuzz(number)
+  index = 1
+  while index <= number
+    if index % 3 == 0 && index % 5 == 0
+      puts "FIZZBUZZ"
+    elsif index % 3 == 0 
+      puts "FIZZ"
+    elsif index % 5 == 0 
+      puts "BUZZ"
+    elsif !(index % 3 == 0 || index % 5 == 0)
+      puts index 
+    end       
+    index += 1
+  end   
 end 
 
-
-p reverse("popcorn is so cool isnt it yeah i thought so")
-
-
-def reverse_words(string)
-  string = string.split(" ")
-  new_string = []
-  index = string.length - 1
-  while index >= 0
-    new_string << string[index]
-    index -= 1
-  end 
-  new_string.join(" ")  
-
-end 
-
-p reverse_words("popcorn is so cool isn’t it yeah i thought so")
+fizzbuzz(17)
 
 
 
