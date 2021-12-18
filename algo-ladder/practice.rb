@@ -674,28 +674,99 @@
 # Resulting in 9 steps. So for input n = 12, the return value would be 9.
 
 
-def collatz(number)
-  steps = 0
-  while number != 1
-    if number % 2 == 0
-      number = number / 2
-      steps += 1
-    elsif 
-      number = (number * 3) + 1
-      steps += 1
-    end 
-  end    
-  steps 
+# def collatz(number)
+#   steps = 0
+#   while number != 1
+#     if number % 2 == 0
+#       number = number / 2
+#       steps += 1
+#     elsif 
+#       number = (number * 3) + 1
+#       steps += 1
+#     end 
+#   end    
+#   steps 
 
 
-end 
+# end 
 
 
-p collatz(12)
-p collatz(14)
-p collatz(15)
+# p collatz(12)
+# p collatz(14)
+# p collatz(15)
 
 #==========================================================
+
+# A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+
+# Find the largest palindrome made from the product of two 3-digit numbers.
+
+# def largest_palindrome(nu)
+
+
+
+
+# end 
+
+
+
+#===========================================================
+
+
+# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# Output: {"Dewey" => 6, "Truman" => 5}
+
+# Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+# def votes(array)
+#   hash_count = Hash.new(0)
+
+#   array.each do |candidate|
+#     if hash_count[candidate]
+#       hash_count[candidate] += 1
+#     else
+#       hash_count[candidate] == 1
+#     end 
+#   end 
+#   hash_count      
+
+
+# end 
+
+
+# p votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+
+#=================================================================
+
+# Given a hash, where the keys are strings representing food items, and the values are numbers representing the price of each food, return the amount someone would pay if theyd order one of each food from the entire menu.
+
+# Input: {"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2}
+
+# Output: 14
+
+# Explanation: If someone would order one of everything on the menu, theyd pay a total of 14 (the sum of all the hashs values).
+
+# def whole_menu(hash)
+#   price = 0
+#   hash.each do |k, v|
+#     price += v
+#   end 
+#   price   
+
+
+
+# end 
+
+
+# p whole_menu({"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2})
+
+#=======================================================================
+
+
+
 
 
 
