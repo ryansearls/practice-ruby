@@ -821,22 +821,37 @@
 # Output: 'UGCACCAGAAUU'
 
 
-def dna(string)
-  rna = {"G" => "C", "C" => "G", "T" => "A", "A" => "U"}
-  new_string = ""
-  index = 0
-  while index < string.length
-    new_string << rna[string[index]]
-    index += 1
+# def dna(string)
+#   rna = {"G" => "C", "C" => "G", "T" => "A", "A" => "U"}
+#   new_string = ""
+#   index = 0
+#   while index < string.length
+#     new_string << rna[string[index]]
+#     index += 1
+#   end 
+#   new_string  
+
+# end 
+
+
+# p dna('ACGTGGTCTTAA')
+
+#===================================================================
+
+def reverse_string(string)
+  index = string.length - 1
+  new_string = ''
+  while index >= 0
+    new_string << string[index]
+    index -= 1
   end 
-  new_string  
+  new_string 
+
+
 
 end 
 
-
-p dna('ACGTGGTCTTAA')
-
-#===================================================================
+p reverse_string("Madam, I'm Adam")
 
 
 
