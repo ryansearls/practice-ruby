@@ -163,6 +163,32 @@
 
 #==============================================================
 
+# Given two arrays of strings, return a new string that contains every combination of a string from the first array concatenated with a string from the second array.
+
+# Input: ["a", "b", "c"], ["d", "e", "f", "g"]
+# Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
+
+
+def array_merge(array1, array2)
+  index1 = 0
+  new_array = []
+  while index1 < array1.length
+    index2 = 0
+      while index2 < array2.length
+      new_array << array1[index1] + array2[index2]
+      index2 += 1
+      end 
+    index1 += 1
+  end 
+  new_array    
+
+end 
+
+
+p array_merge(["a", "b", "c"], ["d", "e", "f", "g"])
+
+#==========================================================
+
 
 
 
