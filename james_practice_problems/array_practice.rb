@@ -169,25 +169,52 @@
 # Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
 
 
-def array_merge(array1, array2)
+# def array_merge(array1, array2)
+#   index1 = 0
+#   new_array = []
+#   while index1 < array1.length
+#     index2 = 0
+#       while index2 < array2.length
+#       new_array << array1[index1] + array2[index2]
+#       index2 += 1
+#       end 
+#     index1 += 1
+#   end 
+#   new_array    
+
+# end 
+
+
+# p array_merge(["a", "b", "c"], ["d", "e", "f", "g"])
+
+#==========================================================
+
+# Given ONE array of strings, return a new array that contains every combination of each string with every other string in the array.
+
+# Input: ["a", "b", "c", "d"]
+# Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
+
+def new_array(array)
+  every_combo = []
   index1 = 0
-  new_array = []
-  while index1 < array1.length
+  while index1 < array.length
     index2 = 0
-      while index2 < array2.length
-      new_array << array1[index1] + array2[index2]
+    while index2 < array.length
+      if array[index1] != array[index2]
+        every_combo << array[index1] + array[index2]
+      end   
       index2 += 1
-      end 
-    index1 += 1
+    end 
+  index1 += 1
   end 
-  new_array    
+  every_combo    
 
 end 
 
 
-p array_merge(["a", "b", "c"], ["d", "e", "f", "g"])
+p new_array(["a", "b", "c", "d"])
 
-#==========================================================
+#===========================================================
 
 
 
