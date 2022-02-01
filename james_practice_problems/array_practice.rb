@@ -74,19 +74,43 @@
 # Input: [5, 17, -4, 20, 12]
 # Output: 20
 
-def greatest_value(array)
-  max = array[0]
-  index = 1
-  while index < array.length
-    if array[index] > max
-      max = array[index]
-    end 
-    index += 1
-  end 
-  max
-end 
+# def greatest_value(array)
+#   max = array[0]
+#   index = 1
+#   while index < array.length
+#     if array[index] > max
+#       max = array[index]
+#     end 
+#     index += 1
+#   end 
+#   max
+# end 
 
-p greatest_value([5, 17, -4, 20, 12])
+# p greatest_value([5, 17, -4, 20, 12])
 
 #=======================================================
+
+# Write a function that accepts an array of numbers and returns the product of all the numbers.
+
+# Input: [1, 2, 3, 4]
+# Output: 24
+
+# Explanation: (1 x 2 x 3 x 4) = 24
+
+def product_of_all_numbers(array)
+  product = 1
+  index = 0
+  while index < array.length
+    product *= array[index]
+    index += 1
+  end 
+  product  
+
+
+end 
+
+
+p product_of_all_numbers([1, 2, 3, 4])
+
+#=========================================================
 
