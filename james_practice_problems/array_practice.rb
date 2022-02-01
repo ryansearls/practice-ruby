@@ -45,3 +45,26 @@
 # p less_than_100([99, 101, 88, 4, 2000, 50])
 
 #=====================================================================
+
+# Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
+
+# Input: [4, 2, 5, 99, -4]
+# Output: [8, 4, 10, 198, -8]
+
+
+def double(array)
+  new_array = []
+  index = 0
+  while index < array.length
+    new_array << array[index] * 2
+    index += 1
+  end 
+  new_array  
+
+
+end 
+
+
+p double([4, 2, 5, 99, -4])
+
+#====================================================================
