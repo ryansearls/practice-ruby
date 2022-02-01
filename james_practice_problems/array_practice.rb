@@ -52,19 +52,41 @@
 # Output: [8, 4, 10, 198, -8]
 
 
-def double(array)
-  new_array = []
-  index = 0
-  while index < array.length
-    new_array << array[index] * 2
-    index += 1
-  end 
-  new_array  
+# def double(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     new_array << array[index] * 2
+#     index += 1
+#   end 
+#   new_array  
 
 
-end 
+# end 
 
 
-p double([4, 2, 5, 99, -4])
+# p double([4, 2, 5, 99, -4])
 
 #====================================================================
+
+# Write a function that returns the greatest value from an array of numbers.
+
+# Input: [5, 17, -4, 20, 12]
+# Output: 20
+
+def greatest_value(array)
+  max = array[0]
+  index = 1
+  while index < array.length
+    if array[index] > max
+      max = array[index]
+    end 
+    index += 1
+  end 
+  max
+end 
+
+p greatest_value([5, 17, -4, 20, 12])
+
+#=======================================================
+
