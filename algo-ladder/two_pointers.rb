@@ -115,6 +115,25 @@
 # [1, 2, 3, 97, 98, 99]
 # [90, 20, 70, 100, 30, 80, 10]
 
+def coolio(array)
+  i1 = 0
+  i2 = array.length - 1
+
+  while i1 <= array.length / 2
+    if array[i1] + array[i2] == 100
+      return true
+    else
+      return false
+    end
+    i1 += 1
+    i2 -= 1
+  end
+end
+
+p coolio([1, 2, 3, 97, 98, 99]) #true
+p coolio([90, 20, 70, 100, 30, 80, 10]) #true
+p coolio([1, 2, 3, 1, 1, 3]) #false
+p coolio([90, 25, 70, 100, 30, 80, 10]) #true but this is not correct
 
 #===========================================
 
@@ -135,20 +154,20 @@
 
 # All given inputs are in lowercase letters a-z.
 
-def longest_common_prefix(array)
-  output = ""
-  i = 0
-  while i < array.length
-    if array[0][i] == array[1][i] && array[0][i] == array[2][i]
-      output += array[0][i]
-    end
-    i += 1
-  end
-  return output
-end
+# def longest_common_prefix(array)
+#   output = ""
+#   i = 0
+#   while i < array.length
+#     if array[0][i] == array[1][i] && array[0][i] == array[2][i]
+#       output += array[0][i]
+#     end
+#     i += 1
+#   end
+#   return output
+# end
 
-p longest_common_prefix(["flower", "flow", "flight"])   # => "fl"
-p longest_common_prefix(["dog","racecar","car"])        # => ""
+# p longest_common_prefix(["flower", "flow", "flight"])   # => "fl"
+# p longest_common_prefix(["dog","racecar","car"])        # => ""
 
 
 #============================================
