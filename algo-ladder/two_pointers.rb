@@ -55,14 +55,22 @@
 # Input: [5, -2, 1, -9, -7, 2, 6]
 # Output: 63 (-9 * -7)
 
-# def largest_product(array)
-#   product = array[0] 
+def largest_product(array)
+  product = 0
+  array.each_with_index do |x1, indx1|
+    array.each_with_index do |x2, indx2|
+      next if indx1 == indx2
+      if product < (x1 * x2)
+        product = (x1 * x2)
+      end 
+    end 
+  end 
+  product      
+
+end 
 
 
-# end 
-
-
-# p largest_product([5, -2, 1, -9, -7, 2, 6])
+p largest_product([5, -2, 1, -9, -7, 2, 6])
 
 
 #=====================================
@@ -115,25 +123,25 @@
 # [1, 2, 3, 97, 98, 99]
 # [90, 20, 70, 100, 30, 80, 10]
 
-def coolio(array)
-  i1 = 0
-  i2 = array.length - 1
+# def coolio(array)
+#   i1 = 0
+#   i2 = array.length - 1
 
-  while i1 <= array.length / 2
-    if array[i1] + array[i2] == 100
-      return true
-    else
-      return false
-    end
-    i1 += 1
-    i2 -= 1
-  end
-end
+#   while i1 <= array.length / 2
+#     if array[i1] + array[i2] == 100
+#       return true
+#     else
+#       return false
+#     end
+#     i1 += 1
+#     i2 -= 1
+#   end
+# end
 
-p coolio([1, 2, 3, 97, 98, 99]) #true
-p coolio([90, 20, 70, 100, 30, 80, 10]) #true
-p coolio([1, 2, 3, 1, 1, 3]) #false
-p coolio([90, 25, 70, 100, 30, 80, 10]) #true but this is not correct
+# p coolio([1, 2, 3, 97, 98, 99]) #true
+# p coolio([90, 20, 70, 100, 30, 80, 10]) #true
+# p coolio([1, 2, 3, 1, 1, 3]) #false
+# p coolio([90, 25, 70, 100, 30, 80, 10]) #true but this is not correct
 
 #===========================================
 
@@ -171,4 +179,6 @@ p coolio([90, 25, 70, 100, 30, 80, 10]) #true but this is not correct
 
 
 #============================================
+
+
 

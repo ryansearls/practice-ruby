@@ -218,26 +218,87 @@ return total_votes
 #=====================================================================
 
 
-def count_votes(array)
-  hash = {}
+# def count_votes(array)
+#   hash = {}
   
-  array.each do |candidate|
-    if hash[candidate]
-      hash[candidate] += 1
-    else hash[candidate] = 1
-    end 
-  end      
+#   array.each do |candidate|
+#     if hash[candidate]
+#       hash[candidate] += 1
+#     else hash[candidate] = 1
+#     end 
+#   end      
 
-  hash
+#   hash
 
-end 
+# end 
 
 
-p count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+# p count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
 
 
 #===============================================================
 
+# Given two arrays of strings, return a new string that contains every combination of a string from the first array concatenated with a string from the second array.
+
+# Input: ["a", "b", "c"], ["d", "e", "f", "g"]
+# Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
+
+
+# def array_merge(array1, array2)
+#   index1 = 0
+#   new_array = []
+#   while index1 < array1.length
+#     index2 = 0
+#     while index2 < array2.length
+#       new_array << array1[index1] + array2[index2]
+#       index2 += 1
+#     end 
+#     index1 += 1
+#   end 
+#   new_array    
+
+
+# end 
+
+
+# p array_merge(["a", "b", "c"], ["d", "e", "f", "g"])
+
+#-----------------------------------------------------------------------
+
+# Given ONE array of strings, return a new array that contains every combination of each string with every other string in the array.
+
+# Input: ["a", "b", "c", "d"]
+# Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
+
+def array_mesh2(array)
+  new_array = []
+  index1 = 0
+  while index1 < array.length
+    index2 = 0
+    while index2 < array.length
+      if array[index1] != array[index2]
+        new_array << array[index1] + array[index2]
+      end 
+      index2 += 1
+    end 
+    index1 += 1
+  end 
+  new_array      
+
+end 
+
+
+p array_mesh2(["a", "b", "c", "d"])
+
+#--------------------------------------------------------------------------
+
+Find the largest product of any two numbers within a given array.
+
+Input: [5, -2, 1, -9, -7, 2, 6]
+Output: 63 (-9 * -7)
+
+
+def largest_product
 
 
 
