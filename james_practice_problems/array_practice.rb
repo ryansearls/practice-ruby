@@ -194,27 +194,76 @@
 # Input: ["a", "b", "c", "d"]
 # Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
 
-def new_array(array)
-  every_combo = []
-  index1 = 0
-  while index1 < array.length
-    index2 = 0
-    while index2 < array.length
-      if array[index1] != array[index2]
-        every_combo << array[index1] + array[index2]
-      end   
-      index2 += 1
-    end 
-  index1 += 1
-  end 
-  every_combo    
+# def new_array(array)
+#   every_combo = []
+#   index1 = 0
+#   while index1 < array.length
+#     index2 = 0
+#     while index2 < array.length
+#       if array[index1] != array[index2]
+#         every_combo << array[index1] + array[index2]
+#       end   
+#       index2 += 1
+#     end 
+#   index1 += 1
+#   end 
+#   every_combo    
 
-end 
+# end 
 
 
-p new_array(["a", "b", "c", "d"])
+# p new_array(["a", "b", "c", "d"])
 
 #===========================================================
+
+# Find the largest product of any two numbers within a given array.
+
+# Input: [5, -2, 1, -9, -7, 2, 6]
+# Output: 63 (-9 * -7)
+
+#=============================================
+
+converter = {
+  "A" => "Z",
+  "B" => "Y",
+  "C" => "X",
+  "D" => "W",
+  "E" => "V",
+  "F" => "U",
+  "G" => "T",
+  "H" => "S",
+  "I" => "R",
+  "J" => "Q",
+  "K" => "P",
+  "L" => "O",
+  "M" => "N",
+  "N" => "M",
+  "O" => "L",
+  "P" => "K",
+  "Q" => "J",
+  "R" => "I",
+  "S" => "H",
+  "T" => "G",
+  "U" => "F",
+  "V" => "E",
+  "W" => "D",
+  "X" => "C",
+  "Y" => "B",
+  "Z" => "A"
+}
+
+puts "Enter a word or phrase:"
+input_phrase = gets.chomp.upcase
+input_letters = input_phrase.split("")
+output_letters = []
+index = 0
+while index < input_letters.length
+  input_letter = input_letters[index]
+  output_letters << converter[input_letter]
+  index = index + 1
+end
+output_phrase = output_letters.join
+p output_phrase
 
 
 

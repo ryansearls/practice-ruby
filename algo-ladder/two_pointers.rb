@@ -50,26 +50,34 @@
 
 #==================================================================
 
-Find the largest product of any two numbers within a given array.
+# Find the largest product of any two numbers within a given array.
 
-Input: [5, -2, 1, -9, -7, 2, 6]
-Output: 63 (-9 * -7)
+# Input: [5, -2, 1, -9, -7, 2, 6]
+# Output: 63 (-9 * -7)
 
+# def largest_product(array)
+#   product = array[0] 
+
+
+# end 
+
+
+# p largest_product([5, -2, 1, -9, -7, 2, 6])
 
 
 #=====================================
 
 
 
-Given an array of numbers, return a new array containing just two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+# Given an array of numbers, return a new array containing just two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 
-Specifically use nested loops to solve this exercise even though there are other approaches as well.
+# Specifically use nested loops to solve this exercise even though there are other approaches as well.
 
-Input: [2, 5, 3, 1, 0, 7, 11]
-Output: [3, 7]
+# Input: [2, 5, 3, 1, 0, 7, 11]
+# Output: [3, 7]
 
-Input: [1, 2, 3, 4, 5]
-Output: false (While 1, 2, 3, and 4 altogether add up to 10, were seeking just one pair of numbers.)
+# Input: [1, 2, 3, 4, 5]
+# Output: false (While 1, 2, 3, and 4 altogether add up to 10, were seeking just one pair of numbers.)
 
 
 
@@ -79,53 +87,68 @@ Output: false (While 1, 2, 3, and 4 altogether add up to 10, were seeking just o
 #==============================================
 
 
-Given two sorted arrays, merge the second array into the first array while ensuring that the first array remains sorted. Do not use any built-in sort methods.
+# Given two sorted arrays, merge the second array into the first array while ensuring that the first array remains sorted. Do not use any built-in sort methods.
 
-Input :
-A : [1, 5, 8]
-B : [6, 9]
+# Input :
+# A : [1, 5, 8]
+# B : [6, 9]
 
-Modified A : [1, 5, 6, 8, 9]
+# Modified A : [1, 5, 6, 8, 9]
 
-def merge_two
+# def merge_two
 
 
 
 #================================================
 
-Given an array of numbers, return true if the array is a "100 Coolio Array", or false if it is not.
+# Given an array of numbers, return true if the array is a "100 Coolio Array", or false if it is not.
 
-A "100 Coolio Array" meets the following criteria:
+# A "100 Coolio Array" meets the following criteria:
 
-Its first and last numbers add up to 100,
-Its second and second-to-last numbers add up to 100,
-Its third and third-to-last numbers add up to 100,
-and so on and so forth.
+# Its first and last numbers add up to 100,
+# Its second and second-to-last numbers add up to 100,
+# Its third and third-to-last numbers add up to 100,
+# and so on and so forth.
 
-Here are examples of 100 Coolio Arrays:
+# Here are examples of 100 Coolio Arrays:
 
-[1, 2, 3, 97, 98, 99]
-[90, 20, 70, 100, 30, 80, 10]
+# [1, 2, 3, 97, 98, 99]
+# [90, 20, 70, 100, 30, 80, 10]
 
 
 #===========================================
 
-Write a function to find the longest common prefix string amongst an array of strings.
+# Write a function to find the longest common prefix string amongst an array of strings.
 
-If there is no common prefix, return an empty string "".
+# If there is no common prefix, return an empty string "".
 
-Example 1:
+# Example 1:
 
-Input: ["flower","flow","flight"]
-Output: "fl"
-Example 2:
+# Input: ["flower","flow","flight"]
+# Output: "fl"
+# Example 2:
 
-Input: ["dog","racecar","car"]
-Output: ""
-Explanation: There is no common prefix among the input strings.
-Note:
+# Input: ["dog","racecar","car"]
+# Output: ""
+# Explanation: There is no common prefix among the input strings.
+# Note:
 
-All given inputs are in lowercase letters a-z.
+# All given inputs are in lowercase letters a-z.
+
+def longest_common_prefix(array)
+  output = ""
+  i = 0
+  while i < array.length
+    if array[0][i] == array[1][i] && array[0][i] == array[2][i]
+      output += array[0][i]
+    end
+    i += 1
+  end
+  return output
+end
+
+p longest_common_prefix(["flower", "flow", "flight"])   # => "fl"
+p longest_common_prefix(["dog","racecar","car"])        # => ""
 
 
 #============================================

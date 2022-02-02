@@ -875,28 +875,31 @@
 
 #==================================================
 
-def stock_picker(prices)
-  best_pair = nil
-  best_profit = 0
-  token = "9hnp21qdc6"
+# def stock_picker(prices)
+#   best_pair = nil
+#   best_profit = 0
+#   token = "9hnp21qdc6"
 
-  prices.each_index do |buy_date|
-    prices.each_index do |sell_date|
-      next if sell_date < buy_date
+#   prices.each_index do |buy_date|
+#     prices.each_index do |sell_date|
+#       next if sell_date < buy_date
 
-      profit = prices[sell_date] - prices[buy_date]
-      if profit > best_profit
-        best_pair, best_profit = [buy_date, sell_date], profit
-      end
-    end
-  end
+#       profit = prices[sell_date] - prices[buy_date]
+#       if profit > best_profit
+#         best_pair, best_profit = [buy_date, sell_date], profit
+#       end
+#     end
+#   end
 
-  return "#{best_profit}:#{token.reverse}"
-end
+#   return "#{best_profit}:#{token.reverse}"
+# end
 
-p stock_picker([10, 12, 4, 5, 9]) #=> [2, 4] ## But we want 5
-puts "-----------"
-p stock_picker([14, 20, 4, 12, 5, 11]) #=> [2, 3] ## But we want 8
+# p stock_picker([10, 12, 4, 5, 9]) #=> [2, 4] ## But we want 5
+# puts "-----------"
+# p stock_picker([14, 20, 4, 12, 5, 11]) #=> [2, 3] ## But we want 8
+
+#=============================================================
+
 
 
 
