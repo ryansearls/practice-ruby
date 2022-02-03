@@ -55,22 +55,22 @@
 # Input: [5, -2, 1, -9, -7, 2, 6]
 # Output: 63 (-9 * -7)
 
-def largest_product(array)
-  product = 0
-  array.each_with_index do |x1, indx1|
-    array.each_with_index do |x2, indx2|
-      next if indx1 == indx2
-      if product < (x1 * x2)
-        product = (x1 * x2)
-      end 
-    end 
-  end 
-  product      
+# def largest_product(array)
+#   product = 0
+#   array.each_with_index do |x1, indx1|
+#     array.each_with_index do |x2, indx2|
+#       next if indx1 == indx2
+#       if product < (x1 * x2)
+#         product = (x1 * x2)
+#       end 
+#     end 
+#   end 
+#   product      
 
-end 
+# end 
 
 
-p largest_product([5, -2, 1, -9, -7, 2, 6])
+# p largest_product([5, -2, 1, -9, -7, 2, 6])
 
 
 #=====================================
@@ -103,7 +103,34 @@ p largest_product([5, -2, 1, -9, -7, 2, 6])
 
 # Modified A : [1, 5, 6, 8, 9]
 
-# def merge_two
+def merge_two(array1, array2)
+  sorted_array = []
+  first_pointer = 0
+  second_pointer = 0
+
+  while first_pointer < array1.length && second_pointer < array2.length
+
+    if array1[first_pointer] < array2[second_pointer]
+      sorted_array << array1[first_pointer]
+      first_pointer += 1
+    else 
+      sorted_array << array2[second_pointer]
+      second_pointer += 1
+    end 
+
+    if first_pointer >= array1.length
+      sorted_array += array2[second_pointer, array2.length - 1]
+    elsif 
+      second_pointer >= array2.length
+      sorted_array += array1[first_pointer, array1.length - 1]
+    end   
+  end 
+  sorted_array
+  
+end 
+
+
+p merge_two([1, 5, 8], [6, 9])
 
 
 
