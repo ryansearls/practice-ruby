@@ -1,26 +1,46 @@
 # 1. Use a nested loop to convert an array of number pairs into a single flattened array.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
 
-def flattened(array)
-  new_array = []
+# def flattened(array)
+#   new_array = []
+#   index1 = 0
+#   while index1 < array.length
+#     number_pair = array[index1]
+#     index2 = 0
+#     while index2 < number_pair.length
+#       number = number_pair[index2]
+#       new_array << number
+#       index2 += 1
+#     end 
+#     index1 += 1
+#   end 
+#   new_array    
+
+
+# end 
+
+
+# p flattened([[1, 3], [8, 9], [2, 16]])
+
+#----------------------------------------------
+
+# 2. Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
+#     For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
+
+def merge_array(array1, array2)
+  new_pairs = []
   index1 = 0
-  while index1 < array.length
-    number_pair = array[index1]
+  while index1 < array1.length
     index2 = 0
-    while index2 < number_pair.length
-      number = number_pair[index2]
-      new_array << number
+    while index2 < array2.length
+      new_pairs << array1[index1] + array2[index2]
       index2 += 1
     end 
     index1 += 1
   end 
-  new_array    
-
+  new_pairs    
 
 end 
 
 
-p flattened([[1, 3], [8, 9], [2, 16]])
-
-#----------------------------------------------
-
+p merge_array(["a", "b", "c"], ["d", "e", "f", "g"])
