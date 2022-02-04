@@ -103,34 +103,34 @@
 
 # Modified A : [1, 5, 6, 8, 9]
 
-def merge_two(array1, array2)
-  sorted_array = []
-  first_pointer = 0
-  second_pointer = 0
+# def merge_two(array1, array2)
+#   sorted_array = []
+#   first_pointer = 0
+#   second_pointer = 0
 
-  while first_pointer < array1.length && second_pointer < array2.length
+#   while first_pointer < array1.length && second_pointer < array2.length
 
-    if array1[first_pointer] < array2[second_pointer]
-      sorted_array << array1[first_pointer]
-      first_pointer += 1
-    else 
-      sorted_array << array2[second_pointer]
-      second_pointer += 1
-    end 
+#     if array1[first_pointer] < array2[second_pointer]
+#       sorted_array << array1[first_pointer]
+#       first_pointer += 1
+#     else 
+#       sorted_array << array2[second_pointer]
+#       second_pointer += 1
+#     end 
 
-    if first_pointer >= array1.length
-      sorted_array += array2[second_pointer, array2.length - 1]
-    elsif 
-      second_pointer >= array2.length
-      sorted_array += array1[first_pointer, array1.length - 1]
-    end   
-  end 
-  sorted_array
+#     if first_pointer >= array1.length
+#       sorted_array += array2[second_pointer, array2.length - 1]
+#     elsif 
+#       second_pointer >= array2.length
+#       sorted_array += array1[first_pointer, array1.length - 1]
+#     end   
+#   end 
+#   sorted_array
   
-end 
+# end 
 
 
-p merge_two([1, 5, 8], [6, 9])
+# p merge_two([1, 5, 8], [6, 9])
 
 
 
