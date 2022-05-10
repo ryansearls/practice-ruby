@@ -77,19 +77,41 @@
 # Output: 20
 
 
-def greatest_number(array)
-  max = array[0]
-  index = 1
-  while index < array.length
-    if max < array[index]
-      max = array[index]
-    end 
-    index += 1  
+# def greatest_number(array)
+#   max = array[0]
+#   index = 1
+#   while index < array.length
+#     if max < array[index]
+#       max = array[index]
+#     end 
+#     index += 1  
+#   end 
+#   max
+# end 
+
+
+# p greatest_number([5, 17, -4, 20, 12])
+
+# -----------------------------------------------------
+
+# Write a function that accepts an array of numbers and returns the product of all the numbers.
+
+# Input: [1, 2, 3, 4]
+# Output: 24
+
+# Explanation: (1 x 2 x 3 x 4) = 24
+
+
+def total(array)
+  sum = 1
+  array.each do |number|
+    sum *= number
   end 
-  max
+  sum  
 end 
 
 
-p greatest_number([5, 17, -4, 20, 12])
+p total([1, 2, 3, 4])
 
+------------------------------------------------------
 
