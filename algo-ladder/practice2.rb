@@ -239,5 +239,29 @@
 # ------------------------------------------------------------
 
 
+# Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
+
+# def duplicates(string)
+#   index = 0
+#   while index < string.length
+#     if string[index] == string[index + 1]
+#       return string[index]
+#     end 
+#     index += 1
+#   end 
+#   return "no matches"
+# end 
+
+
+# p duplicates('abcdefghhijkkloooop')
+# p duplicates('abcdefghijklop')
+
+---------------------------------------------------------------
+
+
 
 
