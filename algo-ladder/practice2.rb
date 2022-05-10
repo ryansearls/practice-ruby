@@ -321,5 +321,31 @@
 
 # ------------------------------------------------------------
 
+# Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+# Input: “popcorn is so cool isn’t it yeah i thought so”
+# Output: “so thought i yeah it isn’t cool so is popcorn”
+
+
+
+# def reverse_string(string)
+#   new_string = string.split(' ')
+#   backwords_string = []
+#   index = new_string.length - 1
+#   while index >= 0
+#     backwords_string << new_string[index]
+#     index -= 1
+#   end 
+#   backwords_string.join(' ') 
+
+# end 
+
+
+# p reverse_string('popcorn is so cool isn’t it yeah i thought so')
+
+-----------------------------------------------------------------
+
+
+
 
 
