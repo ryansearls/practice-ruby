@@ -149,16 +149,53 @@
 # [2, 3, 1, 2, 2, 1, 5, 2, 2]
 
 
-def skip_it(array)
-  new_array = []
-  index = 0
-  while index < array.length
-    new_array << array[index]
-    index += array[index]
-  end 
-  new_array  
-end 
+# def skip_it(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     new_array << array[index]
+#     index += array[index]
+#   end 
+#   new_array  
+# end 
 
 
 
-p skip_it([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+# p skip_it([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+
+# ------------------------------------------------------
+
+
+# Write a function that returns the reverse of a given string.
+
+# Input: “abcde”
+# Output: “edcba”
+
+# def reverse_string(string)
+#   index = string.length - 1
+#   new_string = ''
+#   while index >= 0
+#     new_string << string[index]
+#     index -= 1
+#   end 
+#   new_string  
+# end 
+
+# p reverse_string('abcde')
+
+
+# def reverse(string)
+#   index = string.length - 1
+#   new_string = ''
+#   while index >= 0
+#     new_string << string[index]
+#     index -= 1
+#   end 
+#   new_string 
+
+# end 
+
+
+# p reverse("abcde")
+
+----------------------------------------------------------
