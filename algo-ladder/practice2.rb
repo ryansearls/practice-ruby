@@ -102,16 +102,36 @@
 # Explanation: (1 x 2 x 3 x 4) = 24
 
 
-def total(array)
-  sum = 1
-  array.each do |number|
-    sum *= number
+# def total(array)
+#   sum = 1
+#   array.each do |number|
+#     sum *= number
+#   end 
+#   sum  
+# end 
+
+
+# p total([1, 2, 3, 4])
+
+# ------------------------------------------------------
+
+
+# Given an array, write a function that returns an array that contains the original array’s values in reverse.
+
+# Input: [1, 2, 3, 4, 5]
+# Output: [5, 4, 3, 2, 1]
+
+def reverse_array(array)
+  new_array = []
+  index = array.length - 1
+  while index >= 0
+    new_array << array[index]
+    index -= 1
   end 
-  sum  
+  new_array 
+
 end 
 
 
-p total([1, 2, 3, 4])
-
-------------------------------------------------------
+p reverse_array([1, 2, 3, 4, 5])
 
