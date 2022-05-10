@@ -213,5 +213,31 @@
 
 # -----------------------------------------------------------------
 
+# Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
+
+#   Input: “hello, how are your porcupines today?”
+#   Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
+
+
+# def every_other(string)
+#   index1 = 0
+#   index2 = 1
+#   new_string = ''
+#   while index1 < string.length
+#     new_string << string[index1]
+#     index1 += 2
+#     new_string << string[index2].to_s.upcase
+#     index2 += 2
+#   end 
+    
+#   new_string
+# end 
+
+
+# p every_other('hello, how are your porcupines today?')
+
+# ------------------------------------------------------------
+
+
 
 
