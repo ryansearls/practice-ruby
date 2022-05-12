@@ -494,23 +494,54 @@
 # Resulting in 9 steps. So for input n = 12, the return value would be 9.
 
 
-def collatz(number)
-  steps = 0
-  while number > 1
-    if number % 2 == 0
-      number = number / 2 
-    else
-      number = (number * 3) + 1
-    end
-    steps += 1
-  end 
-  steps
-end 
+# def collatz(number)
+#   steps = 0
+#   while number > 1
+#     if number % 2 == 0
+#       number = number / 2 
+#     else
+#       number = (number * 3) + 1
+#     end
+#     steps += 1
+#   end 
+#   steps
+# end 
 
 
-p collatz(12)
+# p collatz(12)
 
 # -------------------------------------------------
+
+# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# Output: {"Dewey" => 6, "Truman" => 5}
+
+# Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+
+# def votes(array)
+#   total_votes = {}
+#   array.each do |candidate|
+#     if total_votes[candidate]
+#       total_votes[candidate] += 1
+#     else 
+#       total_votes[candidate] = 1
+#     end     
+#   end 
+#   total_votes  
+
+
+
+# end 
+
+
+# p votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+
+# ---------------------------------------------------
+
+
 
 
 
