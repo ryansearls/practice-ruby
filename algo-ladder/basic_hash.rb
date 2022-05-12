@@ -324,6 +324,24 @@
 # Input: “frog”, “bear”
 # Output: false
 
+
+# def count_chars(string)
+#   count = Hash.new(0)
+  
+#   string.each_char do |char|
+#     count[char] += 1
+#   end
+  
+#   count 
+# end
+
+# def anagrams(string1, string2)
+#   return count_chars(string1) == count_chars(string2)
+# end
+
+# p anagrams("hello", "olleh")
+# p anagrams("listen", "boom")
+
 #===========================================
 
 
