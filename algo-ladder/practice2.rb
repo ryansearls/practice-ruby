@@ -519,41 +519,31 @@
 # Output: “p”
 
 
-def frequent_letter(string)
-  count = {}
-  index = 0
-  most_frequent_letter = ''
-  most_frequent_count = 0
-  while index < string.length
-    if count[string[index]] 
-      count[string[index]] += 1
-    else 
-      count[string[index]] = 1
-    end 
+# def frequent_letter(string)
+#   count = {}
+#   index = 0
+#   most_frequent_letter = ''
+#   most_frequent_count = 0
+#   while index < string.length
+#     if count[string[index]] 
+#       count[string[index]] += 1
+#     else 
+#       count[string[index]] = 1
+#     end 
 
-    if count[string[index]] > most_frequent_count
-      most_frequent_count = count[string[index]]
-      most_frequent_letter = string[index]
-    end 
+#     if count[string[index]] > most_frequent_count
+#       most_frequent_count = count[string[index]]
+#       most_frequent_letter = string[index]
+#     end 
 
-    index += 1
-  end 
-  most_frequent_letter 
-end 
-
-
-
-p frequent_letter("peter piper picked a peck of pickled peppers")
+#     index += 1
+#   end 
+#   most_frequent_letter 
+# end 
 
 
 
-
-
-
-
-
-
-
+# p frequent_letter("peter piper picked a peck of pickled peppers")
 
 
 
@@ -650,6 +640,38 @@ p frequent_letter("peter piper picked a peck of pickled peppers")
 
 # ----------------------------------------------------
 
+# Given a DNA strand, return its RNA complement (per RNA transcription).
+
+# Both DNA and RNA strands are a sequence of nucleotides. Here we're representing the sequences with single-letter characters (e.g. a sample strand may look like: "AGCA".)
+
+# Given a string representing a DNA strand, provide its transcribed RNA strand, according to the following pattern:
+
+# G becomes C
+# C becomes G
+# T becomes A
+# A becomes U
+
+# So based on all this, here's a sample input/output:
+
+# Input: 'ACGTGGTCTTAA'
+# Output: 'UGCACCAGAAUU'
+
+
+
+def dna_rna(string)
+  hash = {'G' => 'C', 'C' => 'G', 'T' => 'A', 'A' => 'U'}
+  rna = ''
+  index = 0
+  while index < string.length
+    rna << hash[string[index]]
+    index += 1
+  end 
+  rna  
+
+end 
+
+
+p dna_rna('ACGTGGTCTTAA')
 
 
 
