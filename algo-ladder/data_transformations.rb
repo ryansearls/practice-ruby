@@ -15,6 +15,18 @@
 # 'u' => 1
 # }
 
+# def etl(array, number)
+#   new_hash = {}
+#   array.each do |key|
+#     new_hash[key] = number
+#   end 
+#   new_hash  
+
+# end 
+
+
+# p etl(["a", "e", "i", "o", "u"], 1)
+
 # ------------------------------------------------------
 
 # Given a hash, return a flat array containing all the hash’s keys and values.
