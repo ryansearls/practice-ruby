@@ -512,6 +512,53 @@
 
 # -------------------------------------------------
 
+
+# Given a string, find the most commonly occurring letter.
+
+# Input: “peter piper picked a peck of pickled peppers”
+# Output: “p”
+
+
+def frequent_letter(string)
+  count = {}
+  index = 0
+  most_frequent_letter = ''
+  most_frequent_count = 0
+  while index < string.length
+    if count[string[index]] 
+      count[string[index]] += 1
+    else 
+      count[string[index]] = 1
+    end 
+
+    if count[string[index]] > most_frequent_count
+      most_frequent_count = count[string[index]]
+      most_frequent_letter = string[index]
+    end 
+
+    index += 1
+  end 
+  most_frequent_letter 
+end 
+
+
+
+p frequent_letter("peter piper picked a peck of pickled peppers")
+
+
+
+
+
+
+
+
+
+
+
+
+
+# -------------------------------------------------------
+
 # Given an array of strings, return a hash that provides of a count of how many times each string occurs.
 
 # Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
@@ -601,7 +648,9 @@
 #   ])
 
 
-----------------------------------------------------
+# ----------------------------------------------------
+
+
 
 
 
