@@ -69,3 +69,46 @@
 
 
 # -----------------------------------------------------
+
+# You are given a hash in format #A, and you are to return the same data as a hash using format #B, as specified below:
+
+# Input:
+
+# {
+# 1 => ["A", "E", "I", "O", "U"]
+# }
+
+# Output:
+
+# {
+# 'a' => 1,
+# 'e' => 1,
+# 'i' => 1,
+# 'o' => 1,
+# 'u' => 1
+# }
+
+
+# def form_b(hash)
+#   new_hash = {}
+#   hash.each do |key, value|
+#     value.each do |char|
+#       new_hash[char] = key
+#     end
+#   end
+#   new_hash = Hash[new_hash.sort_by { |key, value| key.to_s }]
+#   return new_hash
+# end
+
+# p form_b({
+#     1 => ["A", "E", "I", "O", "U", "L", "N", "R", "S", "T"],
+#     2 => ["D", "G"],
+#     3 => ["B", "C", "M", "P"],
+#     4 => ["F", "H", "V", "W", "Y"],
+#     5 => ["K"],
+#     8 => ["J", "X"],
+#     10 => ["Q", "Z"],
+#   })
+
+
+  --------------------------------------------------
