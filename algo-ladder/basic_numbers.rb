@@ -312,24 +312,26 @@
 
 # Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
 
-def votes(array)
-  hash_count = Hash.new(0)
+# def votes(array)
+#   hash_count = Hash.new(0)
 
-  array.each do |candidate|
-    if hash_count[candidate]
-      hash_count[candidate] += 1
-    else
-      hash_count[candidate] == 1
-    end 
-  end 
-  hash_count      
-
-
-end 
+#   array.each do |candidate|
+#     if hash_count[candidate]
+#       hash_count[candidate] += 1
+#     else
+#       hash_count[candidate] == 1
+#     end 
+#   end 
+#   hash_count      
 
 
-p votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+# end 
 
+
+# p votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+
+
+# -------------------------------------------------
 
 
 
