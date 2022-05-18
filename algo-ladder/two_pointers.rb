@@ -4,22 +4,22 @@
 # Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
 
 
-def array_mesh1(array1, array2)
-  i1 = 0
-  array = []
-  while i1 < array1.length
-    i2 = 0
-    while i2 < array2.length
-      array << array1[i1] + array2[i2]
-      i2 += 1
-    end 
-    i1 += 1
-  end
-  array      
-end 
+# def array_mesh1(array1, array2)
+#   i1 = 0
+#   array = []
+#   while i1 < array1.length
+#     i2 = 0
+#     while i2 < array2.length
+#       array << array1[i1] + array2[i2]
+#       i2 += 1
+#     end 
+#     i1 += 1
+#   end
+#   array      
+# end 
 
 
-p array_mesh1(["a", "b", "c"], ["d", "e", "f", "g"])
+# p array_mesh1(["a", "b", "c"], ["d", "e", "f", "g"])
 
 
 #==================================================================
@@ -227,4 +227,11 @@ def array_mesh_1(string1, string2)
 end 
 
 
-p array_mesh_1(["a", "b", "c"], ["d", "e", "f", "g"])
+array_mesh_1(["a", "b", "c"], ["d", "e", "f", "g"])
+
+
+
+Given ONE array of strings, return a new array that contains every combination of each string with every other string in the array.
+
+Input: ["a", "b", "c", "d"]
+Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
