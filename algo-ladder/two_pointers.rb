@@ -228,10 +228,3 @@ end
 
 
 array_mesh_1(["a", "b", "c"], ["d", "e", "f", "g"])
-
-
-
-Given ONE array of strings, return a new array that contains every combination of each string with every other string in the array.
-
-Input: ["a", "b", "c", "d"]
-Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
