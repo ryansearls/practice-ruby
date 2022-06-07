@@ -88,8 +88,26 @@
 # Output: false (While 1, 2, 3, and 4 altogether add up to 10, were seeking just one pair of numbers.)
 
 
+def equals_10(array)
+  new_array = []
+  index1 = 0
+  while index1 < array.length
+    index2 = index1 + 1
+    while index2 <= array.length - 1
+      if array[index1] + array[index2] == 10
+        new_array << array[index1]
+        new_array << array[index2]
+        return new_array
+      end 
+      index2 += 1
+    end 
+    index1 += 1
+  end 
+  return false      
 
+end 
 
+p equals_10([2, 5, 3, 1, 0, 7, 11])
 
 
 #==============================================

@@ -86,25 +86,63 @@
 # Input: [1, 2, 3, 4, 5]
 # Output: false (While 1, 2, 3, and 4 altogether add up to 10, were seeking just one pair of numbers.)
 
-def equals_10(array)
-  new_array = []
-  index1 = 0
-  while index1 < array.length
-    index2 = index1 + 1
-    while index2 <= array.length - 1
-      if array[index1] + array[index2] == 10
-        new_array << array[index1]
-        new_array << array[index2]
-        return new_array
-      end 
-      index2 += 1
-    end 
-    index1 += 1
-  end 
-  return false      
+# def equals_10(array)
+#   new_array = []
+#   index1 = 0
+#   while index1 < array.length
+#     index2 = index1 + 1
+#     while index2 <= array.length - 1
+#       if array[index1] + array[index2] == 10
+#         new_array << array[index1]
+#         new_array << array[index2]
+#         return new_array
+#       end 
+#       index2 += 1
+#     end 
+#     index1 += 1
+#   end 
+#   return false      
 
-end 
+# end 
 
-p equals_10([2, 5, 3, 1, 0, 7, 11])
+# p equals_10([2, 5, 3, 1, 0, 7, 11])
 
 #--------------------------------------------------------------
+
+
+# Given two sorted arrays, merge the second array into the first array while ensuring that the first array remains sorted. Do not use any built-in sort methods.
+
+# Input :
+# A : [1, 5, 8]
+# B : [6, 9]
+
+# Modified A : [1, 5, 6, 8, 9]
+
+
+# def merge_sorted_arrays(array1, array2)
+#   index1 = 0
+#   while index1 < array1.length 
+#     index2 = 0
+#     while index2 < array2.length
+#       if array2[index2] > array1[index2]
+#         array1 << array2[index]
+#       end 
+#       index2 += 1
+#     end 
+#     index1 += 1
+#   end 
+#   return array1
+
+
+# end 
+
+# p merge_sorted_arrays([1, 5, 8],[6, 9])
+
+
+#Needs work, not running
+
+
+#------------------------------------------------------------
+
+
+
