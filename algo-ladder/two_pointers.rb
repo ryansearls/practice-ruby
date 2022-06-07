@@ -225,24 +225,3 @@ p equals_10([2, 5, 3, 1, 0, 7, 11])
 
 #============================================
 
-
-
-
-def array_mesh_1(string1, string2)
-  new_array = []
-  index1 = 0
-  while index1 < string1.length
-    index2 = 0
-    while index2 < string2.length
-      new_array << string1[index1] + string2[index2]
-      index2 += 1
-    end 
-    index1 += 1
-  end 
-  new_array      
-
-
-end 
-
-
-array_mesh_1(["a", "b", "c"], ["d", "e", "f", "g"])
