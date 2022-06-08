@@ -725,6 +725,31 @@
 # ---------------------------------------------------
 
 
+# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# Output: {"Dewey" => 6, "Truman" => 5}
+
+# Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+
+def count_votes(array)
+    hash = {}
+    array.each do |candiate|
+        if hash[candiate]
+            hash[candiate] += 1
+        elsif 
+            hash[candiate] = 1
+        end 
+    end          
+    hash
+end 
+
+
+p count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+
+
 
 
 
