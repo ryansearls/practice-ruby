@@ -788,24 +788,63 @@
 # ]
 
 
-def over_1000(array)
-    new_list = []
-    array.each do |post|
-        if post[:likes] > 1000
-            new_list << post
-        end 
+# def over_1000(array)
+#     new_list = []
+#     array.each do |post|
+#         if post[:likes] > 1000
+#             new_list << post
+#         end 
+#     end 
+#     new_list    
+# end
+
+
+# p over_1000([
+#     {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+#     {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+#     {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+#     {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+#     ])
+
+
+#---------------------------------------------------------
+
+# Given a DNA strand, return its RNA complement (per RNA transcription).
+
+# Both DNA and RNA strands are a sequence of nucleotides. Here we're representing the sequences with single-letter characters (e.g. a sample strand may look like: "AGCA".)
+
+# Given a string representing a DNA strand, provide its transcribed RNA strand, according to the following pattern:
+
+# G becomes C
+# C becomes G
+# T becomes A
+# A becomes U
+
+# So based on all this, here's a sample input/output:
+
+# Input: 'ACGTGGTCTTAA'
+# Output: 'UGCACCAGAAUU'
+
+
+def rna(string)
+    new_string = ''
+    compliment = {
+        'G' => 'C',
+        'C' => 'G',
+        'T' => 'A',
+        'A' => 'U',
+    }
+    index = 0 
+    while index < string.length
+        new_string << compliment[string[index]]
+        index += 1
     end 
-    new_list    
-end
+    new_string
+
+end 
 
 
-p over_1000([
-    {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
-    {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
-    {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
-    {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
-    ])
-
+p rna('ACGTGGTCTTAA')
 
 
 
