@@ -27,3 +27,20 @@
 # p etl_1(["a", "e", "i", "o", "u"], 1) #these are the arguments
 
 #-----------------------------------------------------------------------
+
+# Given a hash, return a flat array containing all the hash’s keys and values.
+
+# Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
+# Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
+
+def flatten_hash(hash)
+  array = []
+  hash.each do |k, v|
+    array << k
+    array << v
+  end 
+  array
+end 
+
+
+p flatten_hash({'a' => 1, 'b' => 2, 'c' => 3, 'd' => 4})
