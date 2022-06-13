@@ -135,3 +135,25 @@
 # p hamming("ABCDEFG", "ABCXEOG")
 
 #-----------------------------------------------------------------
+
+# Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+# Input: “popcorn is so cool isn’t it yeah i thought so”
+# Output: “so thought i yeah it isn’t cool so is popcorn”
+
+
+# def reverse_words(string)
+#   new_string = string.split(" ")
+#   backwords_words = []
+#   index = new_string.length - 1
+#   while index >= 0
+#     backwords_words << new_string[index]
+#     index -= 1
+#   end 
+#   backwords_words.join(' ') 
+# end 
+
+
+# p reverse_words('popcorn is so cool isnt it yeah i thought so')
+
+#--------------------------------------------------------------------
