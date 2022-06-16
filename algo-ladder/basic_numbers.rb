@@ -210,30 +210,6 @@
 # Resulting in 9 steps. So for input n = 12, the return value would be 9.
 
 
-# def collatz(num)
-#   steps = 0
-#   while true
-#     if num % 2 == 0
-#       num = num / 2
-#       steps += 1
-#     elsif num % 2 == 1
-#       num = (num * 3) + 1
-#       steps += 1
-#     elsif num == 1
-#       p num
-#       steps += 1
-#       break
-#     end 
-#   end 
-#   return steps      
-# end 
-
-
-# p collatz(12) #9
-
-#does not work
-
-
 # def collatz(n)
 #   steps = 0
 
