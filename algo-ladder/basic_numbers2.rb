@@ -56,17 +56,17 @@
 # Output: 21 (as this is the 9th number of the Fibonacci Sequence)
 
 
-def fibonacci(number)
-  num1, num2 = [0,1]
+# def fibonacci(number)
+#   num1, num2 = [0,1]
 
-  (number - 1).times do
-    num1, num2 = num2, num1 + num2
-  end 
+#   (number - 1).times do
+#     num1, num2 = num2, num1 + num2
+#   end 
 
-  num1
-end 
+#   num1
+# end 
 
-p fibonacci(9)
+# p fibonacci(9)
 
 #----------------------------------------------------------------
 
