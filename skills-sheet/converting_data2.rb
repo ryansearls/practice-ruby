@@ -74,18 +74,37 @@
 #  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
 #     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
 
-def hash_to_array_of_hashes(hash)
-  array = []
-  hash.each do |id, person|
-    person[:id] = id
-    array << person
-  end 
-  array  
-end 
+# def hash_to_array_of_hashes(hash)
+#   array = []
+#   hash.each do |id, person|
+#     person[:id] = id
+#     array << person
+#   end 
+#   array  
+# end 
 
 
-p hash_to_array_of_hashes({321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}})
+# p hash_to_array_of_hashes({321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}})
 
 #--------------------------------------------------------------------------
+
+#  6. Convert an array of strings into a hash with keys for each string in the array and values for the number of times the string appears in the array.
+#     For example, ["do", "or", "do", "not"] becomes {"do" => 2, "or" => 1, "not" => 1}.
+
+def strings_to_hash(array)
+  hash = {}
+  array.each do |string|
+    if hash[string]
+      hash[string] += 1
+    else 
+      hash[string] = 1
+    end 
+  end 
+  hash   
+end 
+
+p strings_to_hash(["do", "or", "do", "not"])
+
+#------------------------------------------------------------------
 
 
