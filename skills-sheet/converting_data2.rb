@@ -91,20 +91,37 @@
 #  6. Convert an array of strings into a hash with keys for each string in the array and values for the number of times the string appears in the array.
 #     For example, ["do", "or", "do", "not"] becomes {"do" => 2, "or" => 1, "not" => 1}.
 
-def strings_to_hash(array)
-  hash = {}
-  array.each do |string|
-    if hash[string]
-      hash[string] += 1
-    else 
-      hash[string] = 1
-    end 
+# def strings_to_hash(array)
+#   hash = {}
+#   array.each do |string|
+#     if hash[string]
+#       hash[string] += 1
+#     else 
+#       hash[string] = 1
+#     end 
+#   end 
+#   hash   
+# end 
+
+# p strings_to_hash(["do", "or", "do", "not"])
+
+#--------------------------------------------------------------------------
+
+#  7. Convert a hash into a flat array containing all the hash’s keys and values.
+#     For example, {"a" => 1, "b" => 2, "c" => 3, "d" => 4} becomes ["a", 1, "b", 2, "c", 3, "d", 4].
+
+def hash_flatten(hash)
+  array = []
+  hash.each do |key, value|
+    array << key
+    array << value
   end 
-  hash   
+  array  
 end 
 
-p strings_to_hash(["do", "or", "do", "not"])
 
-#------------------------------------------------------------------
+p hash_flatten({"a" => 1, "b" => 2, "c" => 3, "d" => 4})
+
+#------------------------------------------------------------------------------
 
 
