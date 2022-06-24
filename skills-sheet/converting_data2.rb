@@ -110,18 +110,39 @@
 #  7. Convert a hash into a flat array containing all the hash’s keys and values.
 #     For example, {"a" => 1, "b" => 2, "c" => 3, "d" => 4} becomes ["a", 1, "b", 2, "c", 3, "d", 4].
 
-def hash_flatten(hash)
-  array = []
-  hash.each do |key, value|
-    array << key
-    array << value
-  end 
-  array  
-end 
+# def hash_flatten(hash)
+#   array = []
+#   hash.each do |key, value|
+#     array << key
+#     array << value
+#   end 
+#   array  
+# end 
 
 
-p hash_flatten({"a" => 1, "b" => 2, "c" => 3, "d" => 4})
+# p hash_flatten({"a" => 1, "b" => 2, "c" => 3, "d" => 4})
 
 #------------------------------------------------------------------------------
 
+#  8. Combine data from a hash with names and prices and an array of hashes with names, colors, and weights to make a new hash.
+#     For example, {"chair" => 75, "book" => 15} and [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}] becomes {"chair" => {price: 75, color: "red", weight: 10}, "book" => {price: 15, color: "black", weight: 1}}.
 
+# def mash_hashes(hash, array)
+#   new_hash = {}
+#   index = 0
+#   while index < array.length
+#     item = array[index]
+#     name = item[:name]
+#     color = item[:color]
+#     weight = item[:weight]
+#     price = hash[name]
+#     new_hash[name] = { price: price, color: color, weight: weight }
+#     index += 1
+#   end 
+#   new_hash  
+# end 
+
+
+# p mash_hashes({"chair" => 75, "book" => 15}, [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}])
+
+#-----------------------------------------------------------------------
