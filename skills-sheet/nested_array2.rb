@@ -107,13 +107,34 @@
 #  6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
 #     For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
 
-def merge_array(array1, array2)
+# def merge_array(array1, array2)
+#   new_array = []
+#   index1 = 0
+#   while index1 < array1.length
+#     index2 = 0
+#     while index2 < array2.length
+#       new_array << array1[index1] + array2[index2]
+#       index2 += 1
+#     end 
+#     index1 += 1
+#   end 
+#   new_array    
+# end 
+
+# p merge_array([1, 2], [6, 7, 8])
+
+#-------------------------------------------------------------------------
+
+#  7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
+#     For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
+
+def array_products(array)
   new_array = []
   index1 = 0
-  while index1 < array1.length
+  while index1 < array.length
     index2 = 0
-    while index2 < array2.length
-      new_array << array1[index1] + array2[index2]
+    while index2 < array.length
+      new_array << array[index1] * array[index2]
       index2 += 1
     end 
     index1 += 1
@@ -121,6 +142,6 @@ def merge_array(array1, array2)
   new_array    
 end 
 
-p merge_array([1, 2], [6, 7, 8])
+p array_products([2, 8, 3])
 
 #-------------------------------------------------------------------------
