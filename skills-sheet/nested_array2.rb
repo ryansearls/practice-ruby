@@ -103,3 +103,24 @@
 # p sum_of_arrays([[1, 3], [8, 9], [2, 16]])
 
 #-----------------------------------------------------------------------
+
+#  6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
+#     For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
+
+def merge_array(array1, array2)
+  new_array = []
+  index1 = 0
+  while index1 < array1.length
+    index2 = 0
+    while index2 < array2.length
+      new_array << array1[index1] + array2[index2]
+      index2 += 1
+    end 
+    index1 += 1
+  end 
+  new_array    
+end 
+
+p merge_array([1, 2], [6, 7, 8])
+
+#-------------------------------------------------------------------------
