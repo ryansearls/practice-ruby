@@ -128,20 +128,45 @@
 #  7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
 #     For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
 
-def array_products(array)
-  new_array = []
-  index1 = 0
-  while index1 < array.length
-    index2 = 0
-    while index2 < array.length
-      new_array << array[index1] * array[index2]
-      index2 += 1
-    end 
-    index1 += 1
-  end 
-  new_array    
-end 
+# def array_products(array)
+#   new_array = []
+#   index1 = 0
+#   while index1 < array.length
+#     index2 = 0
+#     while index2 < array.length
+#       new_array << array[index1] * array[index2]
+#       index2 += 1
+#     end 
+#     index1 += 1
+#   end 
+#   new_array    
+# end 
 
-p array_products([2, 8, 3])
+# p array_products([2, 8, 3])
 
 #-------------------------------------------------------------------------
+
+#  8. Use a nested loop to find the largest sum of any two different numbers within an array.
+#     For example, [1, 8, 3, 10] becomes 18.
+
+def largest_sum(array)
+  index1 = 0
+  total = array[0] + array[0]
+  while index1 < array.length
+    index2 = 1
+    while index2 < array.length
+      if index1 != index2
+        if total < array[index1] + array[index2]
+          total = array[index1] + array[index2]
+        end   
+      end 
+      index2 += 1
+    end 
+    index1 += 1 
+  end 
+  total
+end 
+
+p largest_sum([1, 8, 3, 10])
+
+#--------------------------------------------------------------------------
