@@ -16,3 +16,17 @@
 # p arrays_to_hash([[1, 3], [8, 9], [2, 16]])
 
 #-----------------------------------------------------------------------------
+
+#  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
+#     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
+
+def array_to_hash(array)
+  hash = {}
+  array.each do |sub_hash|
+    hash[sub_hash[:id]] = sub_hash
+  end 
+  hash  
+end 
+
+
+p array_to_hash([{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}])
