@@ -40,20 +40,43 @@
 #  3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 #     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
 
-def every_combo(array)
-  new_array = []
-  index1 = 0
-  while index1 < array.length
-    index2 = 0
-    while index2 < array.length
-      if array[index1] != array[index2]
-        new_array << array[index1] + array[index2]
+# def every_combo(array)
+#   new_array = []
+#   index1 = 0
+#   while index1 < array.length
+#     index2 = 0
+#     while index2 < array.length
+#       if array[index1] != array[index2]
+#         new_array << array[index1] + array[index2]
+#       end 
+#       index2 += 1
+#     end 
+#     index1 += 1
+#   end 
+#   new_array      
+# end 
+
+# p every_combo(["a", "b", "c", "d"])
+
+#---------------------------------------------------------------------------
+
+#  4. Use a nested loop to find the largest product of any two different numbers within a given array.
+#     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
+
+def largest_product(array)
+  product = array[0] * array[1]
+  array.each_with_index do |x1, index1|
+    array.each_with_index do |x2, index2|
+      next if index1 == index2
+      if product < (x1 * x2)
+         product = (x1 * x2)
       end 
-      index2 += 1
-    end 
-    index1 += 1
-  end 
-  new_array      
+     end 
+   end 
+   product  
 end 
 
-p every_combo(["a", "b", "c", "d"])
+
+p largest_product([5, -2, 1, -9, -7, 2, 6])
+
+#----------------------------------------------------------------------
