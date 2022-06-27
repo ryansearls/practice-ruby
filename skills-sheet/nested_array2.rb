@@ -36,3 +36,24 @@
 # p two_array(["a", "b", "c"], ["d", "e", "f", "g"])
 
 #-------------------------------------------------------------------------
+
+#  3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
+#     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
+
+def every_combo(array)
+  new_array = []
+  index1 = 0
+  while index1 < array.length
+    index2 = 0
+    while index2 < array.length
+      if array[index1] != array[index2]
+        new_array << array[index1] + array[index2]
+      end 
+      index2 += 1
+    end 
+    index1 += 1
+  end 
+  new_array      
+end 
+
+p every_combo(["a", "b", "c", "d"])
