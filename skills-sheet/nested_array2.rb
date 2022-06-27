@@ -197,3 +197,24 @@
 # p add_to_10([2, 5, 3, 1, 0, 8, 11])
 
 #--------------------------------------------------------------------------
+
+# 10. Use a nested loop to convert an array of string arrays into a single string.
+#     For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
+
+def array_to_string(array)
+  string = ''
+  index1 = 0
+  while index1 < array.length
+    index2 = 0
+    while index2 < array[index1].length
+      string = string + array[index1][index2]
+      index2 += 1
+    end 
+    index1 += 1
+  end 
+  string    
+end 
+
+p array_to_string([["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]])
+
+#---------------------------------------------------------------------------
