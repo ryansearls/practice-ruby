@@ -1,26 +1,23 @@
---# 1. Use a nested loop to convert an array of number pairs into a single flattened array.
+# 1. Use a nested loop to convert an array of number pairs into a single flattened array.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
 
-# def flattened(array)
-#   new_array = []
-#   index1 = 0
-#   while index1 < array.length
-#     number_pair = array[index1]
-#     index2 = 0
-#     while index2 < number_pair.length
-#       number = number_pair[index2]
-#       new_array << number
-#       index2 += 1
-#     end 
-#     index1 += 1
-#   end 
-#   new_array    
+def flattened(array)
+  flattened_numbers = []
+  index1 = 0
+  while index1 < array.length
+    number_pair = array[index1]
+    index2 = 0
+    while index2 < number_pair.length
+      number = number_pair[index2]
+      flattened_numbers << number
+      index2 = index2 + 1
+    end
+    index1 = index1 + 1
+  end
+  flattened_numbers
+end 
 
-
-# end 
-
-
-# p flattened([[1, 3], [8, 9], [2, 16]])
+p flattened([[1, 3], [8, 9], [2, 16]])
 
 #----------------------------------------------
 
@@ -47,15 +44,15 @@
 
 #-----------------------------------------------------
 
-3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
-#     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
+# 3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
+# #     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
 
-def one_array(array)
+# def one_array(array)
   
 
 
-end 
+# end 
 
 
-p one_array(["a", "b", "c", "d"])
+# p one_array(["a", "b", "c", "d"])
 
