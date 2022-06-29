@@ -93,3 +93,25 @@
 
 #--------------------------------------------------------------------------------------------------------
 
+#  5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
+#     For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
+
+def sum_of_arrays(array)
+  sum = 0
+  index1 = 0
+  while index1 < array.length
+    number_pair = array[index1]
+    index2 = 0
+    while index2 < number_pair.length
+      number = number_pair[index2]
+      sum += number
+      index2 += 1
+    end
+    index1 += 1
+  end
+  sum
+end 
+
+p sum_of_arrays([[1, 3], [8, 9], [2, 16]])
+
+#-----------------------------------------------------------------------------------------------------
