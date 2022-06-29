@@ -119,20 +119,45 @@
 #  6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
 #     For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
 
-def each_combo(numbers1, numbers2)
-  number_sums = []
+# def each_combo(numbers1, numbers2)
+#   number_sums = []
+#   index1 = 0
+#   while index1 < numbers1.length
+#     index2 = 0
+#     while index2 < numbers2.length
+#       number_sums << numbers1[index1] + numbers2[index2]
+#       index2 += 1
+#     end
+#     index1 += 1
+#   end
+#   number_sums
+# end   
+
+# p each_combo([1, 2], [6, 7, 8])
+
+#-----------------------------------------------------------------------------------------------------
+
+#  7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
+#     For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
+
+def combos(array)
+  product_combinations = []
   index1 = 0
-  while index1 < numbers1.length
+  while index1 < array.length
+    first_number = array[index1]
     index2 = 0
-    while index2 < numbers2.length
-      number_sums << numbers1[index1] + numbers2[index2]
+    while index2 < array.length
+      second_number = array[index2]
+      product_combinations << first_number * second_number
       index2 += 1
     end
     index1 += 1
   end
-  number_sums
-end   
+  product_combinations
+end  
 
-p each_combo([1, 2], [6, 7, 8])
+p combos([2, 8, 3])
+
+#-----------------------------------------------------------------------------------------------------
 
 
