@@ -150,19 +150,37 @@
 #  9. Convert an array of hashes into a hash of arrays, using the author as keys and the titles as values.
 #     For example, [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}] becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
 
+# def array_to_hash(array)
+#   hash = {}
+#   index = 0
+#   while index < array.length
+#     book = array[index]
+#     author = book[:author]
+#     title = book[:title]
+#     if hash[author] == nil
+#       hash[author] = []
+#     end
+#     hash[author] << title
+#     index += 1
+#   end 
+#   hash
+# end 
+
+# p array_to_hash([{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}])
+
 #--------------------------------------------------------------------------
 
 # 10. Given a hash, create a new hash that has the keys and values switched.
 #     For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
 
-def switched(hash)
-  new_hash = {}
-  hash.each do |k, v|
-    new_hash[v] = k
-  end 
-  new_hash  
-end 
+# def switched(hash)
+#   new_hash = {}
+#   hash.each do |k, v|
+#     new_hash[v] = k
+#   end 
+#   new_hash  
+# end 
 
-p switched({"a" => 1, "b" => 2, "c" => 3})
+# p switched({"a" => 1, "b" => 2, "c" => 3})
 
 #-------------------------------------------------------------------------

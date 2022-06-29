@@ -215,20 +215,20 @@
 # 10. Use a nested loop to convert an array of string arrays into a single string.
 #     For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
 
-def array_to_string(array)
-  combined_word = ""
-  index1 = 0
-  while index1 < array.length
-    index2 = 0
-    while index2 < array[index1].length
-      combined_word = combined_word + array[index1][index2]
-      index2 = index2 + 1
-    end
-    index1 = index1 + 1
-  end
-  combined_word
-end   
+# def array_to_string(array)
+#   combined_word = ""
+#   index1 = 0
+#   while index1 < array.length
+#     index2 = 0
+#     while index2 < array[index1].length
+#       combined_word = combined_word + array[index1][index2]
+#       index2 = index2 + 1
+#     end
+#     index1 = index1 + 1
+#   end
+#   combined_word
+# end   
 
-p array_to_string([["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]])
+# p array_to_string([["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]])
 
 #------------------------------------------------------------------------------------------------
