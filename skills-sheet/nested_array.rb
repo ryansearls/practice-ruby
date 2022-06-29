@@ -140,24 +140,50 @@
 #  7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
 #     For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
 
-def combos(array)
-  product_combinations = []
-  index1 = 0
-  while index1 < array.length
-    first_number = array[index1]
-    index2 = 0
-    while index2 < array.length
-      second_number = array[index2]
-      product_combinations << first_number * second_number
-      index2 += 1
-    end
-    index1 += 1
-  end
-  product_combinations
-end  
+# def combos(array)
+#   product_combinations = []
+#   index1 = 0
+#   while index1 < array.length
+#     first_number = array[index1]
+#     index2 = 0
+#     while index2 < array.length
+#       second_number = array[index2]
+#       product_combinations << first_number * second_number
+#       index2 += 1
+#     end
+#     index1 += 1
+#   end
+#   product_combinations
+# end  
 
-p combos([2, 8, 3])
+# p combos([2, 8, 3])
 
 #-----------------------------------------------------------------------------------------------------
+
+#  8. Use a nested loop to find the largest sum of any two different numbers within an array.
+#     For example, [1, 8, 3, 10] becomes 18.
+
+
+def largest_sum(array)
+  index1 = 0
+  sum = array[0] + array[1]
+  while index1 < array.length
+    index2 = 1
+    while index2 < array.length
+      if index1 != index2
+        if array[index1] + array[index2] > sum
+          sum = array[index1] + array[index2]
+        end 
+      end 
+      index2 += 1
+    end 
+    index1 += 1
+  end 
+  sum
+end 
+
+p largest_sum([1, 8, 3, 10])
+
+#--------------------------------------------------------------------------------------------------
 
 
