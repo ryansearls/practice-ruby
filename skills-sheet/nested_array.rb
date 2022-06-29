@@ -19,7 +19,7 @@
 
 # p flattened([[1, 3], [8, 9], [2, 16]])
 
-#----------------------------------------------
+#------------------------------------------------------------------------------------------------
 
 # 2. Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
 #     For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
@@ -40,7 +40,7 @@
 
 # p merge_array(["a", "b", "c"], ["d", "e", "f", "g"])
 
-#-----------------------------------------------------
+#--------------------------------------------------------------------------------------------------
 
 # 3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 # #     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
@@ -63,7 +63,7 @@
 
 # p letter_combo(["a", "b", "c", "d"])
 
-#--------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------
 
 #  4. Use a nested loop to find the largest product of any two different numbers within a given array.
 #     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
@@ -91,5 +91,5 @@
 
 # p largest_product([5, -2, 1, -9, -7, 2, 6])
 
-#--------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------
 
