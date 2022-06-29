@@ -45,24 +45,51 @@
 # 3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 # #     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
 
-def letter_combo(array)
-  letter_combinations = []
-  index1 = 0
-  while index1 < array.length
-    index2 = 0
-    while index2 < array.length
-      if index1 != index2
-        letter_combinations << array[index1] + array[index2]
-      end
-      index2 += 1
-    end
-    index1 += 1
-  end
-  letter_combinations
-end   
+# def letter_combo(array)
+#   letter_combinations = []
+#   index1 = 0
+#   while index1 < array.length
+#     index2 = 0
+#     while index2 < array.length
+#       if index1 != index2
+#         letter_combinations << array[index1] + array[index2]
+#       end
+#       index2 += 1
+#     end
+#     index1 += 1
+#   end
+#   letter_combinations
+# end   
 
-p letter_combo(["a", "b", "c", "d"])
+# p letter_combo(["a", "b", "c", "d"])
 
-#---------------------------------------------------------
+#--------------------------------------------------------------
 
+#  4. Use a nested loop to find the largest product of any two different numbers within a given array.
+#     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
+
+# def largest_product(array)
+#   max_product = array[0] * array[1]
+#   index1 = 0
+#   while index1 < array.length
+#     current_number = array[index1]
+#     index2 = 0
+#     while index2 < array.length
+#       if index1 != index2
+#         other_number = array[index2]
+#         product = current_number * other_number
+#         if product > max_product
+#           max_product = product
+#         end
+#       end
+#       index2 += 1
+#     end
+#     index1 += 1
+#   end
+#   max_product
+# end  
+
+# p largest_product([5, -2, 1, -9, -7, 2, 6])
+
+#--------------------------------------------------------------
 
