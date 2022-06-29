@@ -163,27 +163,51 @@
 #  8. Use a nested loop to find the largest sum of any two different numbers within an array.
 #     For example, [1, 8, 3, 10] becomes 18.
 
+# def largest_sum(array)
+#   index1 = 0
+#   sum = array[0] + array[1]
+#   while index1 < array.length
+#     index2 = 1
+#     while index2 < array.length
+#       if index1 != index2
+#         if array[index1] + array[index2] > sum
+#           sum = array[index1] + array[index2]
+#         end 
+#       end 
+#       index2 += 1
+#     end 
+#     index1 += 1
+#   end 
+#   sum
+# end 
 
-def largest_sum(array)
-  index1 = 0
-  sum = array[0] + array[1]
-  while index1 < array.length
-    index2 = 1
-    while index2 < array.length
-      if index1 != index2
-        if array[index1] + array[index2] > sum
-          sum = array[index1] + array[index2]
-        end 
-      end 
-      index2 += 1
-    end 
-    index1 += 1
-  end 
-  sum
-end 
-
-p largest_sum([1, 8, 3, 10])
+# p largest_sum([1, 8, 3, 10])
 
 #--------------------------------------------------------------------------------------------------
 
+#  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+#     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
 
+# def first_two(array)
+#   result = false
+#   index1 = 0
+#   while index1 < array.length
+#     current_number = array[index1]
+#     index2 = 0
+#     while index2 < array.length
+#       if index1 != index2
+#         other_number = array[index2]
+#         if current_number + other_number == 10 && result == false
+#           result = [current_number, other_number]
+#         end
+#       end
+#       index2 += 1
+#     end
+#     index1 += 1
+#   end
+#   result
+# end 
+
+# p first_two([2, 5, 3, 1, 0, 7, 11])
+
+#------------------------------------------------------------------------------------------------
