@@ -23,10 +23,19 @@
 
 # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
-menu = { sandwich: 4, soda: 2, juice: 3 }
-menu[:bread] = 5
-p menu
+# menu = { sandwich: 4, soda: 2, juice: 3 }
+# menu[:bread] = 5
+# p menu
 
 #--------------------------------------------------------------------------------------
 
+# 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
+# book = { title: "The Art of Game Design", author: "Jesse Schell", pages: 520, language:  "English" }
+
+# p book[:title]
+# p book[:author]
+# p book[:pages]
+# p book[:language]
+
+#-------------------------------------------------------------------------------------
