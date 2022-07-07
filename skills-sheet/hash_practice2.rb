@@ -63,13 +63,29 @@
 
 # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
-laptop = { brand: "Apple", model: "MacBook Air", year: 2014 }
+# laptop = { brand: "Apple", model: "MacBook Air", year: 2014 }
 
-p laptop[:brand]
-p laptop[:model]
-p laptop[:year]
+# p laptop[:brand]
+# p laptop[:model]
+# p laptop[:year]
 
 #-------------------------------------------------------------------------------------------
+
+# 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+# laptops = [
+#   { brand: "Microsoft", model:"Surface" },
+#   { brand: "Apple", model: "MacBook Pro" },
+#   { brand: "Dell", model: "XPS 13" }
+# ]
+
+# p laptops[1][:model]
+
+#-------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
