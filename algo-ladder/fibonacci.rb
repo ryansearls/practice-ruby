@@ -28,18 +28,20 @@
 # If your language provides a method in the standard library that does this look-up, pretend it doesn't exist and implement it yourself.
 
 
-def leap_year(year)
-  if year % 4 == 0 && year % 100 != 0 || year % 400 == 0
-    return true
-  else 
-    return false
-  end   
-end 
+# def leap_year(year)
+#   if year % 4 == 0 && year % 100 != 0 || year % 400 == 0
+#     return true
+#   else 
+#     return false
+#   end   
+# end 
 
 
-p leap_year(1997)
-p leap_year(1996)
-p leap_year(1900)
-p leap_year(1600)
+# p leap_year(1997)
+# p leap_year(1996)
+# p leap_year(1900)
+# p leap_year(1600)
+
+#---------------------------------------------------------------------------------
 
 
