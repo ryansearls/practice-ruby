@@ -31,7 +31,6 @@
 
 # Output: {"Dewey" => 6, "Truman" => 5}
 
-# Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
 
 # def count_votes(array)
 #   hash = {}
@@ -55,16 +54,51 @@
 
 # Output: 14
 
-def whole_menu(hash)
-  total = 0
-  hash.each do |k,v|
-    total += v
-  end 
-  total  
-end 
+# def whole_menu(hash)
+#   total = 0
+#   hash.each do |k,v|
+#     total += v
+#   end 
+#   total  
+# end 
 
-p whole_menu({"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2})
+# p whole_menu({"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2})
 
 #-----------------------------------------------------------------------------------
+
+# Given an array of hashes that represent a list of social media posts, return a new array that only contains the posts that have at least 1000 likes.
+
+# Input: [
+# {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+# {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+# {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+# {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+# ]
+
+# Output: [
+# {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+# {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+# ]
+
+
+def popular_posts(array)
+  new_array = []
+  index = 0
+  while index < array.length
+    if array[index][:likes] >= 1000
+      new_array << array[index]
+    end 
+    index += 1
+  end 
+  new_array
+end 
+
+
+p popular_posts([
+  {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+  {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+  {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+  {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+  ])
 
 
