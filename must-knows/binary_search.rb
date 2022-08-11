@@ -1,15 +1,17 @@
-def binary_search(an_array, item)
+# Your job is to write a method called binary_search that takes a sorted array and a value to find in the array, and returns the index in the array where the value was found. If the value is not found into the array, it should return nil instead. To be clear, you're not allowed to use the built in #index method - instead you'll write code to go through the items in the array to accomplish the same thing. You can start with the code below:
+
+def binary_search(array, item)
   first = 0
-  last = an_array.length - 1
+  last = array.length - 1
 
   while first <= last
       i = (first + last) / 2
 
-      if an_array[i] == item
-          return "#{item} found at position #{i}"
-      elsif an_array[i] > item
+      if array[i] == item
+          return "#{item} found at index #{i}"
+      elsif array[i] > item
           last = i - 1
-      else an_array[i] < item
+      else array[i] < item
           first = i + 1
       end
   end
@@ -17,4 +19,4 @@ def binary_search(an_array, item)
   return "#{item} not found in this array"
 end
 
-p binary_search([1,2,3,5,7,9], 4)
+p binary_search([1,2,3,5,7,9], 9)
