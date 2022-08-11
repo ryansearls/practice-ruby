@@ -1,4 +1,4 @@
-# Your job is to implement a bubble sort that takes an array and returns a sorted array. To be clear, you're not allowed to use the built in #sort method - instead you'll write code to go through the array two items at a time to accomplish the same thing.
+# Your job is to implement a bubble sort that takes an array and returns a sorted array. To be clear, you're not allowed to use the built in .sort method - instead you'll write code to go through the array two items at a time to accomplish the same thing.
 
 def bubble_sort(array)
   array.length.times do
