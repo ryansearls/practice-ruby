@@ -22,25 +22,26 @@
 # p binary_search([1,2,3,5,7,9], 9)
 
 
-def binary_search(array, item)
-  first = 0
-  second = array.length - 1
+# def binary_search(array, item)
+#   first = 0
+#   second = array.length - 1
 
-  while first <= second
-    index = (first + second) / 2
+#   while first <= second
+#     index = (first + second) / 2
 
-    if array[index] == item
-      return "#{item} was found at index #{index}"
-    elsif array[index] > item
-      last -= 1
-    else array[index] < item
-      first += 1
-    end     
-  end 
+#     if array[index] == item
+#       return "#{item} was found at index #{index}"
+#     elsif array[index] > item
+#       last -= 1
+#     else array[index] < item
+#       first += 1
+#     end     
+#   end 
 
-  return "#{item} was not found"
+#   return "#{item} was not found"
 
-end 
+# end 
 
 
-p binary_search([1,3,4,6,7,8], 6)
+# p binary_search([1,3,4,6,7,8], 6)
+
