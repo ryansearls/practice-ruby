@@ -12,3 +12,5 @@ def linear_search(list, item)
 end 
 
 p linear_search([1,3,4,5,6,7,9,11], 11)
+p linear_search([1,3,4,5,6,7,9,11], 6)
+p linear_search([1,3,4,5,6,7,9,11], 2)
