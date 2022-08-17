@@ -18,3 +18,20 @@
 # p bubble_sort([50, 17, 56, 6, 83, 261, -4, 45, 34, 8, 1])
 
 #------------------------------------------------------------------------
+
+def bubble_sort(array)
+  array.length.times do
+    index = 0
+    while index < array.length - 1
+      if array[index] > array[index + 1]
+        temp = array[index]                 
+        array[index], array[index + 1] = array[index + 1], temp            
+      end
+      index += 1
+    end
+  end
+  array
+end 
+
+p bubble_sort([50, 17, 56, 6, 83, 261, -4, 45, 34, 8, 1])
+
