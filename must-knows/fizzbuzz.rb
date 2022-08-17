@@ -5,26 +5,26 @@
 # If the number is divisible by both 3 and 5, print out "FIZZBUZZ".
 
 
-def fizzbuzz(n)
-  index = 1
-  while index <= n
-    if index % 3 == 0 && index % 5 == 0
-      puts "FIZZBUZZ"
-    elsif 
-      index % 5 == 0
-      puts "BUZZ"
-    elsif 
-      index % 3 == 0
-      puts "FIZZ"
-    else 
-      puts "#{index}"
-    end 
-    index += 1
-  end 
-end 
+# def fizzbuzz(n)
+#   index = 1
+#   while index <= n
+#     if index % 3 == 0 && index % 5 == 0
+#       puts "FIZZBUZZ"
+#     elsif 
+#       index % 5 == 0
+#       puts "BUZZ"
+#     elsif 
+#       index % 3 == 0
+#       puts "FIZZ"
+#     else 
+#       puts "#{index}"
+#     end 
+#     index += 1
+#   end 
+# end 
 
 
-p fizzbuzz(19)
-p fizzbuzz(7)
-p fizzbuzz(15)
+# p fizzbuzz(19)
+# p fizzbuzz(7)
+# p fizzbuzz(15)
 
