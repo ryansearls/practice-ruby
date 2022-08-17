@@ -5,10 +5,13 @@
 
 
 def reverse_string(string)
-  
-
-
-
+  index = string.length - 1
+  new_string = ''
+  while index >= 0
+    new_string << string[index]
+    index -= 1
+  end 
+  new_string
 end 
 
 
