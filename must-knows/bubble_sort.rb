@@ -34,4 +34,6 @@ def bubble_sort(array)
 end 
 
 p bubble_sort([50, 17, 56, 6, 83, 261, -4, 45, 34, 8, 1])
+p bubble_sort([4, 1, 52, 38, 19, 2, -100, 45, 34, 8])
+p bubble_sort([50, 17, 56, 6, 83, 261, -4, 45, 34, 8, 1])
 
