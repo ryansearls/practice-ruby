@@ -5,14 +5,16 @@ def prime_number(number)
     return false
   end 
 
-  i = 2
-  while i < number
-    return false if number % i == 0
-    i += 1
+  divisor = 2
+  while divisor < number
+    return false if number % divisor == 0
+    divisor += 1
   end
   true
 end 
 
 p prime_number(7)
-
+p prime_number(13)
+p prime_number(12)
+p prime_number(19)
 
